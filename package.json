@@ -24,5 +24,8 @@
   "type": "module",
   "volta": {
     "node": "16.20.0"
+  },
+  "dependencies": {
+    "editorconfig": "^1.0.2"
   }
 }
