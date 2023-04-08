@@ -1,0 +1,139 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page__body {
+  font-family: "PT Sans", sans-serif;
+  margin: 0 auto;
+  width: 320px;
+  background-color: #f2f2f2;
+}
+
+.page__container {
+  background-color: #ffffff;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.intro {
+  position: relative;
+  min-height: 389px;
+  color: #000000;
+  background-color: #81b3d2;
+  background-image: url("../images/intro-background-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.intro::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  min-height: 57px;
+  left: 0;
+  bottom: 0;
+  background-image: url("../images/intro-flag-mobile.svg");
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.intro__wrapper {
+  padding: 90px 19px 85px;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages__item--blue {
+  background-color: #81b3d2;
+}
+
+.advantages__item--housing {
+  background-image: url("../images/icon-housing.svg");
+  background-repeat: no-repeat;
+}
+
+.advantages__item--food {
+  background-image: url("../images/icon-food.svg");
+  background-repeat: no-repeat;
+}
+
+.advantages__item--souvenirs {
+  background-image: url("../images/icon-souvenirs.svg");
+  background-repeat: no-repeat;
+}
+
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social__link--vkontakte {
+  background-color: #81b3d2;
+  background-image: url("../images/vkontakte.svg");
+  background-repeat: no-repeat;
+}
+
+.social__link--telegram {
+  background-color: #81b3d2;
+  background-image: url("../images/telegram.svg");
+  background-repeat: no-repeat;
+}
+
+.social__link--youtube {
+  background-color: #81b3d2;
+  background-image: url("../images/youtube.svg");
+  background-repeat: no-repeat;
+}
+/*# sourceMappingURL=style.css.map */
