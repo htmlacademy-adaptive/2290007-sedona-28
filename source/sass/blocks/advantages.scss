@@ -1,0 +1,22 @@
+.advantages__list {
+  @include list-reset;
+}
+
+.advantages__item--blue {
+  background-color: $blue-color;
+}
+
+.advantages__item--housing {
+  background-image: url("../images/icon-housing.svg");
+  background-repeat: no-repeat;
+}
+
+.advantages__item--food {
+  background-image: url("../images/icon-food.svg");
+  background-repeat: no-repeat;
+}
+
+.advantages__item--souvenirs {
+  background-image: url("../images/icon-souvenirs.svg");
+  background-repeat: no-repeat;
+}

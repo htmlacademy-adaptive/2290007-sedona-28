@@ -1,0 +1,21 @@
+.social__list {
+  @include list-reset;
+}
+
+.social__link--vkontakte {
+  background-color: $blue-color;
+  background-image: url("../images/vkontakte.svg");
+  background-repeat: no-repeat;
+}
+
+.social__link--telegram {
+  background-color: $blue-color;
+  background-image: url("../images/telegram.svg");
+  background-repeat: no-repeat;
+}
+
+.social__link--youtube {
+  background-color: $blue-color;
+  background-image: url("../images/youtube.svg");
+  background-repeat: no-repeat;
+}
