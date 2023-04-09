@@ -19,6 +19,7 @@
 .advantages__description {
   text-align: center;
   text-transform: uppercase;
+  color: $grey-color;
   margin: 0;
 }
 
@@ -47,8 +48,13 @@
   color: $white-color;
 }
 
-.advantages__item-wrapper--housing {
-  padding: 23px 18px 25px 65px;
+.advantages__item-wrapper--housing,
+.advantages__item-wrapper--food {
+  padding: 25px 18px 25px 65px;
+}
+
+.advantages__item-wrapper--souvenirs {
+  padding: 25px 18px 46px 65px;
 }
 
 .advantages__title--left {
@@ -58,10 +64,6 @@
 
 .advantages__description--left {
   text-align: left;
-}
-
-.advantages__item-wrapper--bridge {
-  padding: 37px 18px;
 }
 
 .advantages__item--housing {
@@ -77,4 +79,33 @@
 .advantages__item--souvenirs {
   background-image: url("../images/icon-souvenirs.svg");
   background-repeat: no-repeat;
+}
+
+.advantages__item-wrapper--bridge {
+  padding: 37px 18px;
+}
+
+.advantages__item--dark-white {
+  background-color: $dark-white-color;
+}
+
+.advantages__item-wrapper--square,
+.advantages__item-wrapper--road {
+  padding: 24px 18px;
+}
+
+.advantages__item-wrapper--tourists {
+  padding: 24px 18px 28px;
+}
+
+.advantages__title--square-road-tourists {
+  margin-bottom: 17px;
+}
+
+.advantages__number--grey {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  color: $grey-color;
+  margin-bottom: 17px;
 }

@@ -1,21 +1,27 @@
 .social__list {
   @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.social__link {
+  display: block;
+  width: 48px;
+  height: 48px;
+  background-color: $blue-color;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .social__link--vkontakte {
-  background-color: $blue-color;
   background-image: url("../images/vkontakte.svg");
-  background-repeat: no-repeat;
 }
 
 .social__link--telegram {
-  background-color: $blue-color;
   background-image: url("../images/telegram.svg");
-  background-repeat: no-repeat;
 }
 
 .social__link--youtube {
-  background-color: $blue-color;
   background-image: url("../images/youtube.svg");
-  background-repeat: no-repeat;
 }
