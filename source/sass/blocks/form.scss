@@ -20,3 +20,24 @@
 .form__field-group {
   margin: 0;
 }
+
+.form__label {
+  text-transform: uppercase;
+  color: $grey-color;
+}
+
+.form__input {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  background-color: $personal-data-color;
+  border: none;
+  width: 280px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  padding: 16px 16px;
+}
+
+.form__input--last {
+  margin: 0;
+}
