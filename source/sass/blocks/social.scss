@@ -2,7 +2,12 @@
   @include list-reset;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin-bottom: 30px;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 6px;
 }
 
 .social__link {

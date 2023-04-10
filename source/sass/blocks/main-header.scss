@@ -1,3 +1,16 @@
 .main-header {
   display: flex;
 }
+
+.main-header__logo {
+  position: relative;
+  display: block;
+  width: 185px;
+  margin-left: 67px;
+}
+
+.main-header__logo-image {
+  position: absolute;
+  display: block;
+  z-index: 1;
+}

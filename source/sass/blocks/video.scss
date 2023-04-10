@@ -1,0 +1,22 @@
+.video__wpapper {
+  display: flex;
+  flex-direction: column;
+  padding: 17px 20px 0;
+}
+
+.video__title {
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 38px;
+}
+
+.video__description {
+  text-align: center;
+  text-transform: uppercase;
+  color: $grey-color;
+  margin: 0;
+  margin-bottom: 38px;
+}
