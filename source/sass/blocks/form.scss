@@ -1,0 +1,22 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 0 20px 64px;
+  border: none;
+}
+
+.form__legend {
+  @include title-text ();
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.form__field-group {
+  margin: 0;
+}
