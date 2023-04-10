@@ -24,6 +24,8 @@
 .form__label {
   text-transform: uppercase;
   color: $grey-color;
+  margin: 0;
+  margin-left: 16px;
 }
 
 .form__input {
@@ -41,3 +43,25 @@
 .form__input--last {
   margin: 0;
 }
+
+.form__input--phone {
+  background-image: url("../images/phone.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.form__input--email {
+  background-image: url("../images/mail.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+// .form__button {
+//   width: 58px;
+//   height: 58px;
+//   background-color: $contact-information-color;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   border: none;
+//   padding: 0;
+// }
