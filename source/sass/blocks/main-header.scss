@@ -1,0 +1,14 @@
+.main-header {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.main-header__logo {
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  width: 185px;
+  margin-left: 67px;
+}

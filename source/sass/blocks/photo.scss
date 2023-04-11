@@ -1,0 +1,52 @@
+.photo-catalog__wrapper {
+  padding: 37px 20px 42px;
+}
+
+.photo__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.photo__description {
+  text-align: center;
+  text-transform: uppercase;
+  color: $grey-color;
+  margin: 0;
+}
+
+.photo__list {
+  @include list-reset;
+}
+
+.photo__item-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 20px;
+}
+
+.photo__subtitle {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 15px;
+}
+
+.photo__text {
+  color: $grey-color;
+  margin-bottom: 11px;
+}
+
+.photo__number {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.photo__number--like {
+  background-image: url("../images/like.svg");
+  background-repeat: no-repeat;
+}

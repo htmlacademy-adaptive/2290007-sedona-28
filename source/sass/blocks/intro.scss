@@ -1,0 +1,25 @@
+.intro {
+  position: relative;
+  min-height: 389px;
+  color: #000000;
+  background-color: $blue-color;
+  background-image: url("../images/intro-background-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.intro::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  min-height: 57px;
+  left: 0;
+  bottom: 0;
+  background-image: url("../images/intro-flag-mobile.svg");
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.intro__wrapper {
+  padding: 90px 19px 85px;
+}

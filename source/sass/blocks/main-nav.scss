@@ -1,0 +1,7 @@
+.main-nav__list {
+  @include list-reset;
+}
+
+.site-list__link {
+  @include link-reset;
+}

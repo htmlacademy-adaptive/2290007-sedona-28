@@ -1,0 +1,115 @@
+.advantages__list {
+  @include list-reset;
+}
+
+.advantages-causes__wrapper {
+  padding: 32px 18px;
+}
+
+.advantages__image {
+  display: block;
+}
+
+.advantages__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.advantages__description {
+  text-align: center;
+  text-transform: uppercase;
+  color: $grey-color;
+  margin: 0;
+}
+
+.advantages__item--blue {
+  background-color: $blue-color;
+}
+
+.advantages__item-wrapper {
+  padding: 54px 18px 40px;
+}
+
+.advantages__title--white {
+  color: $white-color;
+  margin-bottom: 11px;
+}
+
+.advantages__number--white {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white-color;
+  margin-bottom: 17px;
+}
+
+.advantages__description--white {
+  color: $white-color;
+}
+
+.advantages__item-wrapper--housing,
+.advantages__item-wrapper--food {
+  padding: 25px 18px 25px 65px;
+}
+
+.advantages__item-wrapper--souvenirs {
+  padding: 25px 18px 46px 65px;
+}
+
+.advantages__title--left {
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.advantages__description--left {
+  text-align: left;
+}
+
+.advantages__item--housing {
+  background-image: url("../images/icon-housing.svg");
+  background-repeat: no-repeat;
+}
+
+.advantages__item--food {
+  background-image: url("../images/icon-food.svg");
+  background-repeat: no-repeat;
+}
+
+.advantages__item--souvenirs {
+  background-image: url("../images/icon-souvenirs.svg");
+  background-repeat: no-repeat;
+}
+
+.advantages__item-wrapper--bridge {
+  padding: 37px 18px;
+}
+
+.advantages__item--dark-white {
+  background-color: $dark-white-color;
+}
+
+.advantages__item-wrapper--square,
+.advantages__item-wrapper--road {
+  padding: 24px 18px;
+}
+
+.advantages__item-wrapper--tourists {
+  padding: 24px 18px 28px;
+}
+
+.advantages__title--square-road-tourists {
+  margin-bottom: 17px;
+}
+
+.advantages__number--grey {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  color: $grey-color;
+  margin-bottom: 17px;
+}

@@ -1,1 +1,21 @@
-// Начните писать стили здесь
+@import "./mixins.scss";
+@import "./variables.scss";
+@import "./base/fonts.scss";
+@import "./base/img.scss";
+@import "./base/visually-hidden.scss";
+@import "./blocks/page.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/intro.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/search.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/hashtag.scss";
+@import "./blocks/social.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/catalog-intro.scss";
+@import "./blocks/photo.scss";
+@import "./blocks/video.scss";
+@import "./blocks/form-intro.scss";
+@import "./blocks/review.scss";
+@import "./blocks/form.scss";

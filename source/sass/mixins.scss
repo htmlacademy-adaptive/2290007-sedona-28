@@ -1,0 +1,26 @@
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin link-reset {
+  text-decoration: none;
+  color: #000000;
+}
+
+@mixin title-text () {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+@mixin description-text () {
+  text-align: center;
+  text-transform: uppercase;
+  color: $grey-color;
+  margin: 0;
+}

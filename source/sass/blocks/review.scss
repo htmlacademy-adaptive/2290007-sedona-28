@@ -1,0 +1,12 @@
+.review-form__wrapper {
+  padding: 36px 20px 55px;
+}
+
+.review__title {
+  @include title-text ();
+  margin-bottom: 24px;
+}
+
+.review__description {
+  @include description-text ();
+}
