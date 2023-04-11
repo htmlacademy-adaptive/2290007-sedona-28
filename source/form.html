@@ -78,72 +78,68 @@
                   </label>
                 </p>
               </fieldset>
-              <fieldset class="form__fieldset">
+              <fieldset class="form__fieldset form__fieldset--radio">
                 <legend class="form__legend">Ваше общее впечатление:</legend>
                 <ul class="form__list">
                   <li class="form-item">
-                    <label class="form__label">
+                    <label class="form__label form__label--radio">
                       <input class="visually-hidden form__input" type="radio" name="impression" value="rather-positive" checked>
                       <span class="form__mark-radio"></span>
                       <span class="form__span">Скорее положительное</span>
                     </label>
                   </li>
                   <li class="form-item">
-                    <label class="form__label">
+                    <label class="form__label form__label--radio">
                       <input class="visually-hidden form__input" type="radio" name="impression" value="rather-negative">
                       <span class="form__mark-radio"></span>
                       <span class="form__span">Скорее отрицательное</span>
                     </label>
                   </li>
                   <li class="form-item">
-                    <label class="form__label">
+                    <label class="form__label form__label--radio">
                       <input class="visually-hidden form__input" type="radio" name="impression" value="difficult-to-answer">
                       <span class="form__mark-radio"></span>
-                      <span class="form__span">Затрудняюсь ответить</span>
+                      <span class="form__span form__span--last">Затрудняюсь ответить</span>
                     </label>
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="form__fieldset">
+              <fieldset class="form__fieldset form__fieldset--checkbox">
                 <legend class="form__legend">Посещенные достопримечательности:</legend>
                 <ul class="form__list">
                   <li class="form-item">
-                    <label class="form__label">
+                    <label class="form__label form__label--checkbox">
                       <input class="visually-hidden form__input" type="checkbox" name="devil's-bridge" checked>
                       <span class="form__mark"></span>
                       <span class="form__span">Мост Дьявола</span>
                     </label>
                   </li>
                   <li class="form-item">
-                    <label class="form__label">
+                    <label class="form__label form__label--checkbox">
                       <input class="visually-hidden form__input" type="checkbox" name="munt-bell" checked>
                       <span class="form__mark"></span>
                       <span class="form__span">Гора-Колокол</span>
                     </label>
                   </li>
                   <li class="form-item">
-                    <label class="form__label">
+                    <label class="form__label form__label--checkbox">
                       <input class="visually-hidden form__input" type="checkbox" name="slide-park" checked>
                       <span class="form__mark"></span>
                       <span class="form__span">Слайд-парк</span>
                     </label>
                   </li>
                   <li class="form-item">
-                    <label class="form__label">
+                    <label class="form__label form__label--checkbox">
                       <input class="visually-hidden form__input" type="checkbox" name="red-rocks">
                       <span class="form__mark"></span>
-                      <span class="form__span">Красные скалы</span>
+                      <span class="form__span form__span--last">Красные скалы</span>
                     </label>
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="form__fieldset">
+              <fieldset class="form__fieldset form__fieldset--textarea">
                 <legend class="form__legend">Опишите свои эмоции:</legend>
-                <p class="form__field-group">
-                  <label class="form__label">
-                    <textarea class="form__textarea" name="emotions" cols="30" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
-                  </label>
-                </p>
+                    <textarea class="form__textarea" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
               </fieldset>
               <div class="form__button-group">
                 <button class="form__button" type="button">Отправить отзыв</button>

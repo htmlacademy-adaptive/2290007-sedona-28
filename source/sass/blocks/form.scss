@@ -7,6 +7,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  margin: 0;
   padding: 0 20px 64px;
   border: none;
 }
@@ -56,12 +57,115 @@
   background-position: right;
 }
 
-// .form__button {
-//   width: 58px;
-//   height: 58px;
-//   background-color: $contact-information-color;
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   border: none;
-//   padding: 0;
-// }
+.form__fieldset--radio,
+.form__fieldset--checkbox {
+  padding-bottom: 49px;
+}
+
+.form__list {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.form__label--radio,
+.form__label--checkbox {
+  position: relative;
+  margin: 0;
+}
+
+.form__mark-radio {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  background-color: $personal-data-color;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.form__input:checked + .form__mark-radio {
+  background-image: url("../images/radio-mark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form__span {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: none;
+  color: #000000;
+  margin-bottom: 20px;
+  padding: 10px 0 10px 62px;
+}
+
+.form__span--last {
+  margin: 0;
+}
+
+.form__mark {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  background-color: $personal-data-color;
+  cursor: pointer;
+}
+
+.form__input:checked + .form__mark {
+  background-image: url("../images/checkbox-mark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form__fieldset--textarea {
+  padding-bottom: 56px;
+}
+
+.form__textarea {
+  background-color: $personal-data-color;
+  border: none;
+  width: 279px;
+  box-sizing: border-box;
+  min-height: 150px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.form__textarea::placeholder {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.form__button-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px 22px;
+}
+
+.form__button {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white-color;
+  background-color: $blue-color;
+  border: none;
+  margin-bottom: 3px;
+  padding: 16px 49px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.form__note {
+  @include description-text ();
+  font-size: 12px;
+  text-align: right;
+  color: rgba(51, 51, 51, 0.6);
+}

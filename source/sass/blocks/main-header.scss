@@ -1,16 +1,14 @@
 .main-header {
+  position: relative;
   display: flex;
+  flex-direction: row-reverse;
 }
 
 .main-header__logo {
-  position: relative;
-  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 1;
   width: 185px;
   margin-left: 67px;
-}
-
-.main-header__logo-image {
-  position: absolute;
-  display: block;
-  z-index: 1;
 }
