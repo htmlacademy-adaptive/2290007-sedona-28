@@ -12,3 +12,15 @@
   width: 185px;
   margin-left: 67px;
 }
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    // width: 100px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    // width: 100px;
+  }
+}
