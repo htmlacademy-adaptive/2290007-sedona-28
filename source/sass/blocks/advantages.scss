@@ -125,6 +125,10 @@
     grid-template-columns: repeat(3, 256px);
   }
 
+  .advantages__item--secondary {
+    grid-column: 1/-1;
+  }
+
   .advantages__image {
     width: 512px;
   }
