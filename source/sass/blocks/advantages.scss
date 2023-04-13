@@ -121,12 +121,8 @@
   }
 
   .advantages__list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .advantages__item {
-    width: 256px;
+    display: grid;
+    grid-template-columns: repeat(3, 256px);
   }
 
   .advantages__image {
