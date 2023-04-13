@@ -10,17 +10,19 @@
   left: 0;
   z-index: 1;
   width: 185px;
-  margin-left: 67px;
+  margin: 0 auto;
 }
 
+// tablet
 @media (min-width: $tablet-width) {
-  .main-header {
-    // width: 100px;
-  }
+  // .main-header__logo {
+  //   margin: 0 auto;
+  // }
 }
 
+// desktop
 @media (min-width: $desktop-width) {
-  .main-header {
-    // width: 100px;
-  }
+  // .main-header__logo {
+  //   margin: 0 auto;
+  // }
 }
