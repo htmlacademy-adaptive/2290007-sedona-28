@@ -1,5 +1,5 @@
 .review-form__wrapper {
-  padding: 36px 20px 55px;
+  padding: 34px 20px 55px;
 }
 
 .review__title {
@@ -9,4 +9,18 @@
 
 .review__description {
   @include description-text ();
+}
+
+// tablet
+@media (min-width: $tablet-width) {
+  .review-form__wrapper {
+    padding: 64px 166px 108px;
+  }
+}
+
+// desktop
+@media (min-width: $desktop-width) {
+  .review-form__wrapper {
+    padding: 115px 382px 68px;
+  }
 }

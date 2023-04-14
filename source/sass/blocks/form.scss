@@ -169,3 +169,90 @@
   text-align: right;
   color: rgba(51, 51, 51, 0.6);
 }
+
+// tablet
+@media (min-width: $tablet-width) {
+  .form {
+    display: grid;
+    grid-template-columns: 280px 298px;
+    column-gap: 70px;
+    row-gap: 48px;
+    justify-content: center;
+  }
+
+  .form__fieldset {
+    display: block;
+    padding: 0;
+  }
+
+  .form__fieldset--radio,
+  .form__fieldset--checkbox,
+  .form__fieldset--textarea,
+  .form__button-group {
+    grid-column: 1/-1;
+  }
+
+  .form__textarea {
+    width: 100%;
+    min-height: 160px;
+  }
+
+  .form__button-group {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+  }
+
+  .form__button {
+    min-width: 324px;
+    margin: 0;
+    padding: 16px 71px;
+  }
+}
+
+// desktop
+@media (min-width: $desktop-width) {
+  .form {
+    display: grid;
+    grid-template-columns: 430px 402px;
+    column-gap: 128px;
+    row-gap: 56px;
+    justify-content: center;
+  }
+
+  .form__fieldset {
+    display: block;
+    padding: 0;
+  }
+
+  .form__fieldset--radio,
+  .form__fieldset--checkbox,
+  .form__fieldset--textarea,
+  .form__button-group {
+    grid-column: 1/-1;
+  }
+
+  .form__fieldset--textarea {
+    display: flex;
+  }
+
+  .form__textarea {
+    width: 768px;
+    margin-bottom: 48px;
+  }
+
+  .form__button-group {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .form__button {
+    width: 324px;
+    margin: 0;
+    padding: 16px 71px;
+  }
+}
