@@ -4,7 +4,7 @@
 
 .photo__title {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 21px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
@@ -13,6 +13,8 @@
 }
 
 .photo__description {
+  font-size: 21px;
+  line-height: 26px;
   text-align: center;
   text-transform: uppercase;
   color: $grey-color;
@@ -49,4 +51,54 @@
 .photo__number--like {
   background-image: url("../images/like.svg");
   background-repeat: no-repeat;
+}
+
+// tablet
+@media (min-width: $tablet-width) {
+  .photo__wrapper {
+    padding: 0 60px;
+  }
+
+  .photo-catalog__wrapper {
+    padding: 66px 165px 67px;
+  }
+
+  .photo__list {
+    display: grid;
+    grid-template-columns: repeat(2, 324px);
+  }
+
+  .photo__item-wrapper {
+    padding: 0;
+  }
+
+  .photo__item--open-spaces {
+    grid-column: 1/-1;
+  }
+
+
+  .photo__image--open-spaces {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+// desktop
+@media (min-width: $desktop-width) {
+  .photo__wrapper {
+    padding: 0;
+  }
+
+  .photo-catalog__wrapper {
+    padding: 104px 371px 69px;
+  }
+
+  .photo__list {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+  }
+
+  .photo__item-wrapper {
+    padding: 0;
+  }
 }

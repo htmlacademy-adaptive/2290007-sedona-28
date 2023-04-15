@@ -18,3 +18,17 @@
 .page__container {
   background-color: #ffffff;
 }
+
+// tablet
+@media (min-width: $tablet-width) {
+  .page__body {
+    width: 768px;
+  }
+}
+
+// desktop
+@media (min-width: $desktop-width) {
+  .page__body {
+    width: 1200px;
+  }
+}

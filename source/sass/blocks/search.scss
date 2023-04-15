@@ -1,9 +1,14 @@
 .search {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .search-offers__wrapper {
   padding: 38px 29px 32px;
+}
+
+.search__image {
+  display: block;
 }
 
 .search__title {
@@ -35,4 +40,33 @@
   background-color: $blue-color;
   margin: 0 18px 49px;
   padding: 16px 49px;
+}
+
+// tablet
+@media (min-width: $tablet-width) {
+  .search-offers__wrapper {
+    padding: 60px 166px 44px;
+  }
+
+  .search__link {
+    margin: 0 155px 55px;
+    padding: 14px 121px 17px;
+  }
+
+  .search__image {
+    width: 100%;
+    height: 350px;
+  }
+}
+
+// desktop
+@media (min-width: $desktop-width) {
+  .search-offers__wrapper {
+    padding: 60px 382px 44px;
+  }
+
+  .search__link {
+    margin: 0 371px 66px;
+    padding: 14px 121px 17px;
+  }
 }
