@@ -1,7 +1,35 @@
+.main-nav {
+  position: relative;
+}
+
+.main-nav__toogle {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  width: 23px;
+  height: 22px;
+  background-color: $white-color;
+  background-image: url("../images/icon-toogle.svg");
+  cursor: pointer;
+  border: none;
+  z-index: 1;
+}
+
 .main-nav__list {
   @include list-reset;
 }
 
+.site-list__item {
+  background-color: $blue-color;
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
 .site-list__link {
-  @include link-reset;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $white-color;
 }
