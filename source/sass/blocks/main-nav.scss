@@ -26,8 +26,10 @@
   }
 }
 
-.main-nav--opened {
-  z-index: 30;
+.main-nav--opened .main-nav__wrapper {
+  position: absolute;
+  width: 100%;
+  z-index: 20;
 }
 
 .main-nav--opened .main-nav__toogle {
@@ -41,6 +43,7 @@
   background-image: url("../images/icon-closed.svg");
   cursor: pointer;
   border: none;
+  z-index: 30;
 }
 
 .main-nav--nojs .main-nav__toogle {
