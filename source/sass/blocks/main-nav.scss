@@ -79,17 +79,16 @@
 
 // tablet
 @media (min-width: $tablet-width) {
-  .main-header {
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-
-  .main-nav__toogle {
+  .main-nav--closed .main-nav__toogle,
+  .main-nav--opened .main-nav__toogle {
     display: none;
   }
 
-  .main-nav__list {
+  .site-list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: auto;
   }
 
   .site-list__item {
@@ -98,29 +97,25 @@
     text-align: center;
   }
 
-  .site-list__item--current {
-    color: #766357;
-  }
-
   .site-list__item--photo {
     margin-right: 153px;
+  }
+
+  .site-list__link {
+    font-size: 14px;
+    line-height: 21px;
+    color: $black-color;
+    background-color: $white-color;
+    padding: 0;
   }
 }
 
 // desktop
 @media (min-width: $desktop-width) {
-  .main-nav__list {
-    display: flex;
-  }
-
   .site-list__item {
     min-width: 240px;
     padding: 18px 0 17px;
     text-align: center;
-  }
-
-  .site-list__item--current {
-    color: #766357;
   }
 
   .site-list__item--photo {
