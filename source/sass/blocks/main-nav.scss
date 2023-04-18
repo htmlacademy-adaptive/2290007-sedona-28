@@ -73,12 +73,16 @@
   text-decoration: none;
   color: $white-color;
   background-color: $blue-color;
-  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
   padding: 17px 80px 12px;
 }
 
 // tablet
 @media (min-width: $tablet-width) {
+  .main-nav--closed .site-list__item,
+  .main-nav--opened .site-list__item {
+    display: block;
+  }
+
   .main-nav--closed .main-nav__toogle,
   .main-nav--opened .main-nav__toogle {
     display: none;
