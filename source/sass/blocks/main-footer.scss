@@ -9,12 +9,28 @@
 // tablet
 @media (min-width: $tablet-width) {
   .main-footer__wrapper {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
     align-items: center;
+    padding: 36px 60px;
+    column-gap: 113px;
+  }
+
+  .main-footer__hashtag {
+    padding: 0;
   }
 
   .main-footer__copyright {
     padding: 0;
+  }
+}
+
+// desktop
+@media (min-width: $desktop-width) {
+  .main-footer__wrapper {
+
+    padding: 36px 120px;
+    column-gap: 269px;
   }
 }

@@ -1,10 +1,14 @@
+br {
+  display: none;
+}
+
 .advantages__list {
   @include list-reset;
   position: relative;
 }
 
 .advantages-causes__wrapper {
-  padding: 32px 18px;
+  padding: 32px 28px;
 }
 
 .advantages__image {
@@ -109,9 +113,12 @@
   background-color: $dark-white-color;
 }
 
-.advantages__item-wrapper--square,
+.advantages__item-wrapper--square {
+  padding: 24px 26px;
+}
+
 .advantages__item-wrapper--road {
-  padding: 24px 18px;
+  padding: 24px 41px;
 }
 
 .advantages__item-wrapper--tourists {
@@ -133,7 +140,7 @@
 // tablet
 @media (min-width: $tablet-width) {
   br {
-    display: none;
+    display: block;
   }
 
   .advantages__item--pseudo::before {
@@ -178,10 +185,16 @@
     height: 256px;
   }
 
-  .advantages__item-wrapper--housing,
-  .advantages__item-wrapper--food,
-  .advantages__item-wrapper--souvenirs {
+  .advantages__item-wrapper--housing {
     padding: 158px 33px 60px;
+  }
+
+  .advantages__item-wrapper--food {
+    padding: 156px 50px 61px;
+  }
+
+  .advantages__item-wrapper--souvenirs {
+    padding: 158px 43px 64px;
   }
 
   .advantages__title--left {
@@ -203,10 +216,26 @@
   .advantages__item--souvenirs {
     background-position: 98px 64px;
   }
+
+  .advantages__item-wrapper--square {
+    padding: 41px 33px 63px;
+  }
+
+  .advantages__item-wrapper--road {
+    padding: 41px 40px;
+  }
+
+  .advantages__item-wrapper--tourists {
+    padding: 41px 33px 63px;
+  }
 }
 
 // desktop
 @media (min-width: $desktop-width) {
+  br {
+    display: block;
+  }
+
   .advantages-causes__wrapper {
     padding: 59px 358px 44px;
   }
@@ -219,11 +248,32 @@
   .advantages__item-wrapper {
     width: 400px;
     box-sizing: border-box;
-    padding: 52px 50px 51px;
+    padding: 52px 60px 51px;
   }
 
   .advantages__image {
     // width: 800px;
     height: 256px;
+  }
+
+  .advantages__item-wrapper--housing {
+    padding: 169px 50px 69px;
+  }
+
+  .advantages__item-wrapper--food {
+    padding: 166px 50px 71px;
+  }
+
+  .advantages__item-wrapper--souvenirs {
+    padding: 170px 43px 67px;
+  }
+
+  .advantages__item--housing,
+  .advantages__item--souvenirs {
+    background-position: 159px 69px;
+  }
+
+  .advantages__item--food {
+    background-position: 162px 72px;
   }
 }
