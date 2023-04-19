@@ -289,13 +289,57 @@
     display: grid;
     grid-template-columns: 430px 402px;
     column-gap: 128px;
-    row-gap: 56px;
     justify-content: center;
   }
 
   .form__fieldset {
     display: block;
     padding: 0;
+    margin-bottom: 71px;
+  }
+
+  .form__input {
+    width: 430px;
+  }
+
+  .form__input--phone,
+  .form__input--email {
+    width: 402px;
+  }
+
+  .form__field-group--phone,
+  .form__field-group--email {
+    display: block;
+  }
+
+  .form__fieldset--radio {
+    margin-bottom: 56px;
+  }
+
+  .form__list--radio {
+    display: grid;
+    grid-template-columns: repeat(3, 280px);
+    column-gap: 28px;
+    padding: 0 53px;
+  }
+
+  .form__span {
+    margin-right: 0;
+  }
+
+  .form__span--last {
+    margin-bottom: 16px;
+  }
+
+  .form__list--checkbox {
+    display: grid;
+    grid-template-columns: 172px 170px 153px 184px;
+    column-gap: 64px;
+    padding: 0 44px;
+  }
+
+  .form__span--checkbox {
+    padding-right: 0;
   }
 
   .form__fieldset--radio,
@@ -307,6 +351,7 @@
 
   .form__fieldset--textarea {
     display: flex;
+    margin-bottom: 64px;
   }
 
   .form__textarea {
