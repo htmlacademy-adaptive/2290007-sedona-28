@@ -1,16 +1,12 @@
+.copyright {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
 .copyright__text {
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
-}
-
-// tablet
-@media (min-width: $tablet-width) {
-  .copyright {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 12px;
-    width: 129px;
-  }
 }

@@ -1,5 +1,6 @@
 .review-form__wrapper {
-  padding: 34px 20px 55px;
+  padding: 34px 20px 30px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .review__title {
@@ -15,6 +16,12 @@
 @media (min-width: $tablet-width) {
   .review-form__wrapper {
     padding: 64px 166px 108px;
+    border: none;
+  }
+
+  .review__title {
+    font-size: 30px;
+    margin-bottom: 20px;
   }
 }
 

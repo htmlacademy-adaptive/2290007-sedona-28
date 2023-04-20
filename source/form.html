@@ -12,7 +12,7 @@
         <a class="main-header__logo">
           <img class="main-header__logo-image" src="images/logo-sedona.svg" width="185" height="96" alt="Логотип городка Седона.">
         </a>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toogle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -21,7 +21,7 @@
               <li class="site-list__item">
                 <a class="site-list__link" href="index.html">Главная</a>
               </li>
-              <li class="site-list__item">
+              <li class="site-list__item site-list__item--photo">
                 <a class="site-list__link" href="photo.html">ФОТО И ВИДЕО</a>
               </li>
               <li class="site-list__item site-list__item--current">
@@ -66,14 +66,14 @@
                   </label>
                 </p>
               </fieldset>
-              <fieldset class="form__fieldset">
-                <legend class="form__legend">Контактная информация:</legend>
-                <p class="form__field-group">
-                  <label class="form__label">Контактный телефон*:
+              <fieldset class="form__fieldset form__fieldset--information">
+                <legend class="form__legend form__legend--information">Контактная информация:</legend>
+                <p class="form__field-group form__field-group--phone">
+                  <label class="form__label form__label--phone">Контактный телефон*:
                     <input class="form__input form__input--phone" type="tel" name="tel" placeholder="Введите телефон" required>
                   </label>
                 </p>
-                <p class="form__field-group">
+                <p class="form__field-group form__field-group--email">
                   <label class="form__label">Электронная почта*:
                     <input class="form__input form__input--last form__input--email" type="email" name="email" placeholder="Введите e-mail" required>
                   </label>
@@ -81,7 +81,7 @@
               </fieldset>
               <fieldset class="form__fieldset form__fieldset--radio">
                 <legend class="form__legend">Ваше общее впечатление:</legend>
-                <ul class="form__list">
+                <ul class="form__list form__list--radio">
                   <li class="form-item">
                     <label class="form__label form__label--radio">
                       <input class="visually-hidden form__input" type="radio" name="impression" value="rather-positive" checked>
@@ -93,7 +93,7 @@
                     <label class="form__label form__label--radio">
                       <input class="visually-hidden form__input" type="radio" name="impression" value="rather-negative">
                       <span class="form__mark-radio"></span>
-                      <span class="form__span">Скорее отрицательное</span>
+                      <span class="form__span form__span--secondary">Скорее отрицательное</span>
                     </label>
                   </li>
                   <li class="form-item">
@@ -106,34 +106,34 @@
                 </ul>
               </fieldset>
               <fieldset class="form__fieldset form__fieldset--checkbox">
-                <legend class="form__legend">Посещенные достопримечательности:</legend>
-                <ul class="form__list">
+                <legend class="form__legend">Посещенные<br> достопримечательности:</legend>
+                <ul class="form__list form__list--checkbox">
                   <li class="form-item">
                     <label class="form__label form__label--checkbox">
                       <input class="visually-hidden form__input" type="checkbox" name="devil's-bridge" checked>
                       <span class="form__mark"></span>
-                      <span class="form__span">Мост Дьявола</span>
+                      <span class="form__span form__span--checkbox">Мост Дьявола</span>
                     </label>
                   </li>
                   <li class="form-item">
                     <label class="form__label form__label--checkbox">
                       <input class="visually-hidden form__input" type="checkbox" name="munt-bell" checked>
                       <span class="form__mark"></span>
-                      <span class="form__span">Гора-Колокол</span>
+                      <span class="form__span form__span--checkbox">Гора-Колокол</span>
                     </label>
                   </li>
                   <li class="form-item">
                     <label class="form__label form__label--checkbox">
                       <input class="visually-hidden form__input" type="checkbox" name="slide-park" checked>
                       <span class="form__mark"></span>
-                      <span class="form__span">Слайд-парк</span>
+                      <span class="form__span form__span--checkbox">Слайд-парк</span>
                     </label>
                   </li>
                   <li class="form-item">
                     <label class="form__label form__label--checkbox">
                       <input class="visually-hidden form__input" type="checkbox" name="red-rocks">
                       <span class="form__mark"></span>
-                      <span class="form__span form__span--last">Красные скалы</span>
+                      <span class="form__span form__span--checkbox form__span--last">Красные скалы</span>
                     </label>
                   </li>
                 </ul>
@@ -183,5 +183,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

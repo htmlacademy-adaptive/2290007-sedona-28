@@ -4,11 +4,6 @@
   list-style: none;
 }
 
-@mixin link-reset {
-  text-decoration: none;
-  color: #000000;
-}
-
 @mixin title-text () {
   font-weight: 700;
   font-size: 18px;

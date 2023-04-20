@@ -6,58 +6,7 @@
   position: absolute;
   right: 0;
   left: 0;
-  z-index: 1;
+  z-index: 10;
   width: 185px;
   margin: 0 auto;
-}
-
-// tablet
-@media (min-width: $tablet-width) {
-  .main-header {
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-
-  .main-nav__toogle {
-    display: none;
-  }
-
-  .main-nav__list {
-    display: flex;
-  }
-
-  .site-list__item {
-    min-width: 153px;
-    padding: 18px 0 17px;
-    text-align: center;
-  }
-
-  .site-list__item--current {
-    color: #766357;
-  }
-
-  .site-list__item--phto {
-    margin-right: 153px;
-  }
-}
-
-// desktop
-@media (min-width: $desktop-width) {
-  .main-nav__list {
-    display: flex;
-  }
-
-  .site-list__item {
-    min-width: 240px;
-    padding: 18px 0 17px;
-    text-align: center;
-  }
-
-  .site-list__item--current {
-    color: #766357;
-  }
-
-  .site-list__item--phto {
-    margin-right: 240px;
-  }
 }

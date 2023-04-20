@@ -29,7 +29,6 @@
 }
 
 .search__link {
-  @include link-reset;
   display: inline-block;
   font-weight: 700;
   font-size: 21px;
@@ -40,12 +39,17 @@
   background-color: $blue-color;
   margin: 0 18px 49px;
   padding: 16px 49px;
+  text-decoration: none;
 }
 
 // tablet
 @media (min-width: $tablet-width) {
   .search-offers__wrapper {
     padding: 60px 166px 44px;
+  }
+
+  .search__title {
+    font-size: 30px;
   }
 
   .search__link {
