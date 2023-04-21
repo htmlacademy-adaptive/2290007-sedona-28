@@ -151,6 +151,7 @@ br {
     padding: 47px 124px 55px;
   }
 
+
   .advantages__title {
     font-size: 21px;
   }
@@ -173,6 +174,7 @@ br {
 
   .advantages__item--blue {
     grid-column: 1/-1;
+    flex-wrap: nowrap;
   }
 
   .advantages__title--white {
@@ -180,9 +182,8 @@ br {
   }
 
   .advantages__image {
-    // width: 512px;
-    flex-grow: 1;
-    height: 256px;
+    width: 100%;
+    height: auto;
   }
 
   .advantages__item-wrapper--housing {

@@ -38,7 +38,11 @@
         <section class="intro">
           <div class="intro__wrapper">
             <h1 class="visually-hidden">Городок Седона</h1>
-            <img class="intro__image" src="images/intro-image.svg" width="282" height="214" alt="Добро пожаловать в великолепную Седону, потому что Гранд-Каньон — отстой!.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="images/intro-image-desktop.svg">
+              <source media="(min-width: 768px)" srcset="images/intro-image-tablet.svg">
+              <img class="intro__image" src="images/intro-image-mobile.svg" width="282" height="214" alt="Добро пожаловать в великолепную Седону, потому что Гранд-Каньон — отстой!.">
+            </picture>
           </div>
         </section>
         <section class="advantages">
@@ -55,7 +59,13 @@
                   <span class="advantages__number advantages__number--white">— №1 —</span>
                   <p class="advantages__description advantages__description--white">Седона не аттракцион для туристов, там течёт своя жизнь</p>
                 </div>
-                <img class="advantages__image" src="images/advantages-town-mobile.jpg" width="320" height="260" alt="Городок.">
+
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="images/advantages-town-desktop.jpg">
+                  <source media="(min-width: 768px)" srcset="images/advantages-town-tablet.jpg">
+                  <img class="advantages__image" src="images/advantages-town-mobile.jpg" width="320" height="260" alt="Городок.">
+                </picture>
+
               </li>
               <li class="advantages__item advantages__item--housing">
                 <div class="advantages__item-wrapper advantages__item-wrapper--housing">

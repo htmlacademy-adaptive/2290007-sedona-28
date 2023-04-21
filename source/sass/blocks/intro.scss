@@ -34,13 +34,20 @@
     background-image: url("../images/intro-background-tablet.jpg");
   }
 
+  @media (min-resolution: 2dppx) {
+    .intro {
+      background-image: url("../images/intro-background-tablet@2x.jpg");
+      background-size: 768px auto;
+    }
+  }
+
   .intro::after {
     background-image: url("../images/intro-flag-tablet.svg");
   }
 
   .intro__image {
-    width: 461px;
-    height: 350px;
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -52,6 +59,13 @@
 
   .intro {
     background-image: url("../images/intro-background-desktop.jpg");
+  }
+
+  @media (min-resolution: 2dppx) {
+    .intro {
+      background-image: url("../images/intro-background-desktop@2x.jpg");
+      background-size: 1200px auto;
+    }
   }
 
   .intro::after {
