@@ -38,7 +38,11 @@
         <section class="form-intro">
           <div class="form-intro__wrapper">
             <h1 class="visually-hidden">Городок Седона</h1>
-            <img class="form-intro__image" src="images/catalog-intro-image.svg" width="229" height="39" alt="Седона.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="images/form-intro-image-desktop.svg">
+              <source media="(min-width: 768px)" srcset="images/form-intro-image-tablet.svg">
+              <img class="form-intro__image" src="images/form-intro-image-mobile.svg" width="229" height="39" alt="Седона.">
+            </picture>
           </div>
         </section>
         <section class="review">

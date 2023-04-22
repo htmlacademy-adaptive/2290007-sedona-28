@@ -24,6 +24,10 @@
   z-index: 1;
 }
 
+.catalog-intro__image {
+  display: block;
+}
+
 // tablet
 @media (min-width: $tablet-width) {
   .catalog-intro__wrapper {
@@ -31,7 +35,14 @@
   }
 
   .catalog-intro {
-    background-image: url("../images/intro-background-tablet.jpg");
+    background-image: url("../images/catalog-intro-background-tablet.jpg");
+  }
+
+  @media (min-resolution: 2dppx) {
+    .catalog-intro {
+      background-image: url("../images/catalog-intro-background-tablet@2x.jpg");
+      background-size: 768px auto;
+    }
   }
 
   .catalog-intro::after {
@@ -39,19 +50,26 @@
   }
 
   .catalog-intro__image {
-    width: 457px;
-    height: 77px;
+    width: 100%;
+    height: auto;
   }
 }
 
 // desktop
 @media (min-width: $desktop-width) {
   .catalog-intro__wrapper {
-    padding: 78px 370px 90px;
+    padding: 101px 370px 120px;
   }
 
   .catalog-intro {
-    background-image: url("../images/intro-background-desktop.jpg");
+    background-image: url("../images/catalog-intro-background-desktop.jpg");
+  }
+
+  @media (min-resolution: 2dppx) {
+    .catalog-intro {
+      background-image: url("../images/catalog-intro-background-desktop@2x.jpg");
+      background-size: 1200px auto;
+    }
   }
 
   .catalog-intro::after {

@@ -24,6 +24,10 @@
   z-index: 1;
 }
 
+.intro__image {
+  display: block;
+}
+
 // tablet
 @media (min-width: $tablet-width) {
   .intro__wrapper {
