@@ -153,7 +153,8 @@ br {
 
   .advantages__image {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
   }
 
   .advantages__title {
