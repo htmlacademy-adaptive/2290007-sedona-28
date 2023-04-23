@@ -38,7 +38,11 @@
         <section class="catalog-intro">
           <div class="catalog-intro__wrapper">
             <h1 class="visually-hidden">Городок Седона</h1>
-            <img class="catalog-intro__image" src="images/catalog-intro-image.svg" width="229" height="39" alt="Седона.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="images/catalog-intro-image-desktop.svg">
+              <source media="(min-width: 768px)" srcset="images/catalog-intro-image-tablet.svg">
+              <img class="catalog-intro__image" src="images/catalog-intro-image-mobile.svg" width="229" height="39" alt="Седона.">
+            </picture>
           </div>
         </section>
         <section class="photo">
@@ -50,7 +54,11 @@
             <ul class="photo__list">
               <li class="photo__item photo__item--open-spaces">
                 <div class="photo__item-wrapper">
-                  <img class="photo__image photo__image--open-spaces" src="images/photo-1-mobile.jpg" width="280" height="280" alt="Неродные просторы.">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="images/photo-1-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="images/photo-1-tablet.jpg">
+                    <img class="photo__image photo__image--open-spaces" src="images/photo-1-mobile.jpg" width="280" height="280" alt="Неродные просторы.">
+                  </picture>
                   <div class="photo__text-number-wrapper">
                     <div class="photo__text-wrapper">
                       <h3 class="photo__subtitle">Неродные просторы</h3>
@@ -65,7 +73,11 @@
               </li>
               <li class="photo__item">
                 <div class="photo__item-wrapper">
-                  <img class="photo__image" src="images/photo-2-mobile.jpg" width="280" height="280" alt="Местная растительность.">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="images/photo-2-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="images/photo-2-tablet.jpg">
+                    <img class="photo__image" src="images/photo-2-mobile.jpg" width="280" height="280" alt="Местная растительность.">
+                  </picture>
                   <div class="photo__text-number-wrapper">
                     <div class="photo__text-wrapper">
                       <h3 class="photo__subtitle">Местная растительность</h3>
@@ -80,8 +92,12 @@
               </li>
               <li class="photo__item">
                 <div class="photo__item-wrapper">
-                  <img class="photo__image" src="images/photo-3-mobile.jpg" width="280" height="280" alt="Дорога на север.">
-                  <div class="photo__text-number-wrapper">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="images/photo-3-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="images/photo-3-tablet.jpg">
+                    <img class="photo__image" src="images/photo-3-mobile.jpg" width="280" height="280" alt="Дорога на север.">
+                  </picture>
+                  <div class="photo__text-number-wrapper photo__text-number-wrapper--dark">
                     <div class="photo__text-wrapper">
                       <h3 class="photo__subtitle">Дорога на север</h3>
                       <span class="photo__text">Автор фото: Петр</span>
@@ -95,7 +111,11 @@
               </li>
               <li class="photo__item">
                 <div class="photo__item-wrapper">
-                  <img class="photo__image" src="images/photo-4-mobile.jpg" width="280" height="280" alt="Мост дьявола.">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="images/photo-4-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="images/photo-4-tablet.jpg">
+                    <img class="photo__image" src="images/photo-4-mobile.jpg" width="280" height="280" alt="Мост дьявола.">
+                  </picture>
                   <div class="photo__text-number-wrapper">
                     <div class="photo__text-wrapper">
                       <h3 class="photo__subtitle">Мост дьявола</h3>
@@ -115,7 +135,11 @@
           <div class="video__wpapper">
             <h2 class="video__title">Все еще сомневаетесь?</h2>
             <p class="video__description">Смотрите видеопрезентацию и<br>скорее за билетами, пока они не подорожали в очередной раз!</p>
-            <img class="video__image" src="images/video.jpg" width="280" height="177" alt="Видео-обзор городка Седона.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="images/video-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="images/video-tablet.jpg">
+              <img class="video__image" src="images/video-mobile.jpg" width="280" height="177" alt="Видео-обзор городка Седона.">
+            </picture>
           </div>
         </section>
       </main>

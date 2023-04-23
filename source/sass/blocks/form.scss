@@ -35,6 +35,29 @@
   margin-left: 16px;
 }
 
+.form__label--phone,
+.form__label--email {
+  position: relative;
+}
+
+.form__label--phone::after,
+.form__label--email::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
+  background-image: url("../images/phone.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form__label--email::after {
+  content: "";
+  background-image: url("../images/mail.svg");
+}
+
 .form__input {
   font-weight: 700;
   font-size: 18px;
@@ -47,29 +70,8 @@
   padding: 16px 16px;
 }
 
-// .form__input::before {
-//   content: "";
-//   position: absolute;
-//   width: 58px;
-//   height: 58px;
-//   background-color: #e6e6e6;
-//   background-image: url("../images/phone.svg");
-// }
-
 .form__input--last {
   margin: 0;
-}
-
-.form__input--phone {
-  background-image: url("../images/phone.svg");
-  background-repeat: no-repeat;
-  background-position: right;
-}
-
-.form__input--email {
-  background-image: url("../images/mail.svg");
-  background-repeat: no-repeat;
-  background-position: right;
 }
 
 .form__fieldset--radio,
@@ -296,6 +298,10 @@
     display: block;
     padding: 0;
     margin-bottom: 71px;
+  }
+
+  .form__legend--information {
+    margin-left: 32px;
   }
 
   .form__input {

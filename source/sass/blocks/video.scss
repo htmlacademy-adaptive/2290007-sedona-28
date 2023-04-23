@@ -21,6 +21,10 @@
   margin-bottom: 38px;
 }
 
+.video__image {
+  display: block;
+}
+
 // tablet
 @media (min-width: $tablet-width) {
   .video__wpapper {
@@ -37,7 +41,7 @@
 
   .video__image {
     width: 100%;
-    height: 500px;
+    height: auto;
   }
 }
 

@@ -24,6 +24,10 @@
   z-index: 1;
 }
 
+.form-intro__image {
+  display: block;
+}
+
 // tablet
 @media (min-width: $tablet-width) {
   .form-intro__wrapper {
@@ -31,7 +35,14 @@
   }
 
   .form-intro {
-    background-image: url("../images/intro-background-tablet.jpg");
+    background-image: url("../images/form-intro-background-tablet.jpg");
+  }
+
+  @media (min-resolution: 2dppx) {
+    .form-intro {
+      background-image: url("../images/form-intro-background-tablet@2x.jpg");
+      background-size: 768px auto;
+    }
   }
 
   .form-intro::after {
@@ -39,8 +50,8 @@
   }
 
   .form-intro__image {
-    width: 457px;
-    height: 77px;
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -51,7 +62,14 @@
   }
 
   .form-intro {
-    background-image: url("../images/intro-background-desktop.jpg");
+    background-image: url("../images/form-intro-background-desktop.jpg");
+  }
+
+  @media (min-resolution: 2dppx) {
+    .form-intro {
+      background-image: url("../images/form-intro-background-desktop@2x.jpg");
+      background-size: 1200px auto;
+    }
   }
 
   .form-intro::after {

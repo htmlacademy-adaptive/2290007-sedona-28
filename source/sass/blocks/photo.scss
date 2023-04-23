@@ -23,6 +23,10 @@
   @include list-reset;
 }
 
+.photo__image {
+  display: block;
+}
+
 .photo__item-wrapper {
   display: flex;
   flex-direction: column;
@@ -92,6 +96,10 @@
     padding: 22px 20px 15px;
   }
 
+  .photo__text-number-wrapper--dark {
+    background-color: #eaeaea;
+  }
+
   .photo__subtitle {
     margin: 0;
   }
@@ -102,6 +110,11 @@
 
   .photo__item--open-spaces {
     grid-column: 1/-1;
+  }
+
+  .photo__image {
+    width: 100%;
+    height: auto;
   }
 
 
@@ -142,7 +155,7 @@
     bottom: 0;
     width: 100%;
     box-sizing: border-box;
-    background-color: transparent;
+    background-color: rgb(0, 0, 0, 0.3);
     padding: 22px 20px 15px;
   }
 
