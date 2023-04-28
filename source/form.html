@@ -193,16 +193,20 @@
       </footer>
       <section class="modal-failure modal-failure--close">
         <div class="modal-failure__container">
-          <h2 class="modal-failure__title">Что-то пошло не так!</h2>
+          <h2 class="modal-failure__title">Что-то пошло<br> не так!</h2>
           <p class="modal-failure__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
           <button class="modal-failure__button-close" type="button">Oк</button>
         </div>
       </section>
       <section class="modal-success modal-success--close">
         <div class="modal-success__container">
-          <h2 class="modal-success__title">Ваш отзыв отправлен!</h2>
-          <p class="modal-success__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-          <button class="modal-success__button-close" type="button">Закрыть окно</button>
+          <div class="modal-success__wrapper">
+            <h2 class="modal-success__title">Ваш отзыв отправлен!</h2>
+            <p class="modal-success__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.</p>
+          </div>
+          <div class="modal-success__button-wrapper">
+            <button class="modal-success__button-close" type="button">Закрыть окно</button>
+          </div>
         </div>
       </section>
     </div>
