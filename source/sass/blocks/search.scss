@@ -4,7 +4,7 @@
 }
 
 .search-offers__wrapper {
-  padding: 38px 29px 32px;
+  padding: 42px 29px 32px;
 }
 
 .search__image {
@@ -18,7 +18,7 @@
   text-align: center;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 22px;
 }
 
 .search__description {
@@ -50,11 +50,14 @@
 
   .search__title {
     font-size: 30px;
+    margin-bottom: 32px;
   }
 
   .search__link {
+    min-width: 458px;
+    box-sizing: border-box;
     margin: 0 155px 55px;
-    padding: 14px 121px 17px;
+    padding: 14px 15px 17px;
   }
 
   .search__image {
@@ -72,5 +75,9 @@
   .search__link {
     margin: 0 371px 66px;
     padding: 14px 121px 17px;
+  }
+
+  .search__title {
+    margin-bottom: 37px;
   }
 }

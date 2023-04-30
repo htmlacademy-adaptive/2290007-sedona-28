@@ -1,5 +1,5 @@
 .main-footer__hashtag {
-  padding: 33px 92px 30px;
+  padding: 43px 92px 30px;
 }
 
 .main-footer__copyright {
@@ -32,5 +32,10 @@
 
     padding: 36px 120px;
     column-gap: 269px;
+  }
+
+  .main-footer__copyright {
+    padding-top: 7px;
+    padding-left: 2px;
   }
 }

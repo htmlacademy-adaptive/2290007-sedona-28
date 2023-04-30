@@ -22,7 +22,7 @@ br {
   text-align: center;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 38px;
 }
 
 .advantages__description {
@@ -42,14 +42,14 @@ br {
   width: 100%;
   min-height: 37px;
   left: 0;
-  top: 0;
+  top: -14px;
   background-image: url("../images/flag-2.svg");
   background-repeat: no-repeat;
   z-index: 1;
 }
 
 .advantages__item-wrapper {
-  padding: 54px 18px 40px;
+  padding: 54px 18px 42px;
 }
 
 .advantages__title--white {
@@ -69,13 +69,16 @@ br {
   color: $white-color;
 }
 
-.advantages__item-wrapper--housing,
+.advantages__item-wrapper--housing {
+  padding: 30px 18px 25px 65px;
+}
+
 .advantages__item-wrapper--food {
-  padding: 25px 18px 25px 65px;
+  padding: 10px 18px 25px 65px;
 }
 
 .advantages__item-wrapper--souvenirs {
-  padding: 25px 18px 46px 65px;
+  padding: 5px 18px 46px 65px;
 }
 
 .advantages__title--left {
@@ -96,17 +99,17 @@ br {
 .advantages__item--food {
   background-image: url("../images/icon-food-mobile.svg");
   background-repeat: no-repeat;
-  background-position: 18px 23px;
+  background-position: 18px 3px;
 }
 
 .advantages__item--souvenirs {
   background-image: url("../images/icon-souvenirs-mobile.svg");
   background-repeat: no-repeat;
-  background-position: 18px 23px;
+  background-position: 22px 0;
 }
 
 .advantages__item-wrapper--bridge {
-  padding: 37px 18px;
+  padding: 35px 18px;
 }
 
 .advantages__item--dark-white {
@@ -122,11 +125,11 @@ br {
 }
 
 .advantages__item-wrapper--tourists {
-  padding: 24px 18px 28px;
+  padding: 24px 32px 28px;
 }
 
 .advantages__title--square-road-tourists {
-  margin-bottom: 17px;
+  margin-bottom: 12px;
 }
 
 .advantages__number--grey {
@@ -159,6 +162,7 @@ br {
 
   .advantages__title {
     font-size: 21px;
+    margin-bottom: 30px;
   }
 
   .advantages__list {
@@ -169,6 +173,10 @@ br {
   .advantages__item-wrapper {
     width: 256px;
     box-sizing: border-box;
+    padding: 52px 23px 31px;
+  }
+
+  .advantages__item-wrapper--bridge {
     padding: 52px 33px 31px;
   }
 
@@ -190,6 +198,11 @@ br {
     margin-bottom: 11px;
   }
 
+  .advantages__number--white,
+  .advantages__number--grey {
+    margin-bottom: 27px;
+  }
+
   .advantages__item-wrapper--housing {
     padding: 158px 33px 60px;
   }
@@ -199,11 +212,12 @@ br {
   }
 
   .advantages__item-wrapper--souvenirs {
-    padding: 158px 43px 64px;
+    padding: 152px 43px 64px;
   }
 
   .advantages__title--left {
     text-align: center;
+    margin-bottom: 20px;
   }
 
   .advantages__description--left {
@@ -257,6 +271,10 @@ br {
   .advantages__item-wrapper--tourists {
     padding: 41px 33px 63px;
   }
+
+  .advantages__title--square-road-tourists {
+    margin-bottom: 12px;
+  }
 }
 
 // desktop
@@ -277,6 +295,10 @@ br {
     width: 400px;
     box-sizing: border-box;
     padding: 52px 60px 51px;
+  }
+
+  .advantages__item-wrapper--bridge {
+    padding: 52px 90px 51px;
   }
 
   .advantages__item-wrapper--housing {
@@ -325,5 +347,9 @@ br {
       background-image: url("../images/icon-souvenirs-desktop@2x.svg");
       background-size: 1200px auto;
     }
+  }
+
+  .advantages__item-wrapper--square {
+    padding: 52px 50px 51px;
   }
 }
