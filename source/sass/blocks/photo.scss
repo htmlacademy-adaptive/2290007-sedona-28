@@ -1,5 +1,5 @@
 .photo-catalog__wrapper {
-  padding: 30px 20px 42px;
+  padding: 35px 20px 42px;
 }
 
 .photo__title {
@@ -9,7 +9,7 @@
   text-align: center;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .photo__description {
@@ -30,7 +30,7 @@
 .photo__item-wrapper {
   display: flex;
   flex-direction: column;
-  padding: 25px 20px;
+  padding: 15px 20px 36px;
 }
 
 .photo__subtitle {
@@ -70,7 +70,7 @@
   }
 
   .photo-catalog__wrapper {
-    padding: 66px 165px 67px;
+    padding: 66px 165px 82px;
   }
 
   .photo__title {
@@ -93,7 +93,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: $personal-data-color;
-    padding: 22px 20px 15px;
+    padding: 22px 20px 5px;
   }
 
   .photo__text-number-wrapper--dark {
@@ -105,7 +105,8 @@
   }
 
   .photo__number-wrapper {
-    align-items: flex-end;
+    align-items: flex-start;
+    margin-bottom: 15px;
   }
 
   .photo__item--open-spaces {
@@ -136,7 +137,7 @@
   }
 
   .photo-catalog__wrapper {
-    padding: 99px 371px 64px;
+    padding: 99px 380px 90px;
   }
 
   .photo__list {
@@ -156,7 +157,11 @@
     width: 100%;
     box-sizing: border-box;
     background-color: rgb(0, 0, 0, 0.3);
-    padding: 22px 20px 15px;
+    padding-left: 25px;
+  }
+
+  .photo__number-wrapper {
+    gap: 10px;
   }
 
   .photo__subtitle,
