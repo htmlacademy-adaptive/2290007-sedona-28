@@ -1,7 +1,12 @@
 .video__wpapper {
   display: flex;
   flex-direction: column;
-  padding: 17px 27px 0;
+  padding: 10px 20px 0;
+}
+
+.video__wpapper-text {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .video__title {
@@ -10,7 +15,7 @@
   text-align: center;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 25px;
 }
 
 .video__description {
@@ -31,12 +36,18 @@
     padding: 58px 60px 40px;
   }
 
+  .video__wpapper-text {
+    padding: 0;
+  }
+
   .video__title {
     font-size: 30px;
+    margin-bottom: 30px;
   }
 
   .video__description {
     padding: 0 100px;
+    margin-bottom: 90px;
   }
 
   .video__image {
@@ -52,7 +63,8 @@
   }
 
   .video__description {
-    padding: 0 180px;
+    margin-bottom: 83px;
+    padding: 0 170px;
   }
 
   .video__image {

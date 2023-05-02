@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="images/favicons/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon 32x32.png">
+    <link rel="apple-touch-icon" href="images/favicons/favicon 180x180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <div class="page__container">
@@ -19,7 +24,7 @@
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
-                <a class="site-list__link" href="index.html">Главная</a>
+                <a class="site-list__link site-list__link--index" href="index.html">Главная</a>
               </li>
               <li class="site-list__item site-list__item--photo">
                 <a class="site-list__link" href="photo.html">ФОТО И ВИДЕО</a>
@@ -28,7 +33,7 @@
                 <a class="site-list__link" href="form.html">Форма отзыва</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link" href="#">HTML ACADEMY</a>
+                <a class="site-list__link site-list__link--academy" href="#">HTML ACADEMY</a>
               </li>
             </ul>
           </div>
@@ -73,18 +78,18 @@
               <fieldset class="form__fieldset form__fieldset--information">
                 <legend class="form__legend form__legend--information">Контактная информация:</legend>
                 <p class="form__field-group form__field-group--phone">
-                  <label class="form__label form__label--phone">Контактный телефон*:
+                  <label class="form__label form__label--phone"><span class="form__span--phone">Контактный телефон*:</span>
                     <input class="form__input form__input--phone" type="tel" name="tel" placeholder="Введите телефон" required>
                   </label>
                 </p>
                 <p class="form__field-group form__field-group--email">
-                  <label class="form__label form__label--email">Электронная почта*:
+                  <label class="form__label form__label--email"><span class="form__span--email">Электронная почта*:</span>
                     <input class="form__input form__input--last form__input--email" type="email" name="email" placeholder="Введите e-mail" required>
                   </label>
                 </p>
               </fieldset>
               <fieldset class="form__fieldset form__fieldset--radio">
-                <legend class="form__legend">Ваше общее впечатление:</legend>
+                <legend class="form__legend form__legend--impression">Ваше общее впечатление:</legend>
                 <ul class="form__list form__list--radio">
                   <li class="form-item">
                     <label class="form__label form__label--radio">
@@ -110,7 +115,7 @@
                 </ul>
               </fieldset>
               <fieldset class="form__fieldset form__fieldset--checkbox">
-                <legend class="form__legend">Посещенные<br> достопримечательности:</legend>
+                <legend class="form__legend form__legend--attractions">Посещенные<br> достопримечательности:</legend>
                 <ul class="form__list form__list--checkbox">
                   <li class="form-item">
                     <label class="form__label form__label--checkbox">
@@ -186,6 +191,24 @@
           </div>
         </div>
       </footer>
+      <section class="modal-failure modal-failure--close">
+        <div class="modal-failure__container">
+          <h2 class="modal-failure__title">Что-то пошло<br> не так!</h2>
+          <p class="modal-failure__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <button class="modal-failure__button-close" type="button">Oк</button>
+        </div>
+      </section>
+      <section class="modal-success modal-success--close">
+        <div class="modal-success__container">
+          <div class="modal-success__wrapper">
+            <h2 class="modal-success__title">Ваш отзыв отправлен!</h2>
+            <p class="modal-success__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.</p>
+          </div>
+          <div class="modal-success__button-wrapper">
+            <button class="modal-success__button-close" type="button">Закрыть окно</button>
+          </div>
+        </div>
+      </section>
     </div>
     <script src="js/script.js"></script>
   </body>

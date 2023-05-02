@@ -74,6 +74,26 @@
   color: $white-color;
   background-color: $blue-color;
   padding: 17px 80px 12px;
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.site-list__link--index {
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2);
+}
+
+.site-list__link--academy {
+  position: relative;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.site-list__link--academy::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  width: 100%;
+  min-height: 7px;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
 }
 
 // tablet
@@ -111,6 +131,11 @@
     color: $black-color;
     background-color: $white-color;
     padding: 0;
+    box-shadow: none;
+  }
+
+  .site-list__link--academy::after {
+    display: none;
   }
 }
 

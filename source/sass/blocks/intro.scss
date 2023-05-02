@@ -12,6 +12,13 @@
   background-size: 100% 100%;
 }
 
+@media (min-resolution: 2dppx) {
+  .intro {
+    background-image: url("../images/intro-background-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
+}
+
 .intro::after {
   content: "";
   position: absolute;

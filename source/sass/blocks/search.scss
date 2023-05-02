@@ -1,10 +1,22 @@
 .search {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
 }
 
+.search::before {
+  position: absolute;
+  left: 146px;
+  bottom: 165px;
+  content: "";
+  width: 27px;
+  height: 27px;
+  background-image: url("../images/map-marker.svg");
+  background-repeat: no-repeat;
+}
+
 .search-offers__wrapper {
-  padding: 38px 29px 32px;
+  padding: 42px 29px 32px;
 }
 
 .search__image {
@@ -18,7 +30,7 @@
   text-align: center;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 22px;
 }
 
 .search__description {
@@ -44,17 +56,25 @@
 
 // tablet
 @media (min-width: $tablet-width) {
+  .search::before {
+    left: 370px;
+    bottom: 155px;
+  }
+
   .search-offers__wrapper {
     padding: 60px 166px 44px;
   }
 
   .search__title {
     font-size: 30px;
+    margin-bottom: 32px;
   }
 
   .search__link {
+    min-width: 458px;
+    box-sizing: border-box;
     margin: 0 155px 55px;
-    padding: 14px 121px 17px;
+    padding: 14px 15px 17px;
   }
 
   .search__image {
@@ -65,6 +85,11 @@
 
 // desktop
 @media (min-width: $desktop-width) {
+  .search::before {
+    left: 585px;
+    bottom: 160px;
+  }
+
   .search-offers__wrapper {
     padding: 60px 382px 44px;
   }
@@ -72,5 +97,9 @@
   .search__link {
     margin: 0 371px 66px;
     padding: 14px 121px 17px;
+  }
+
+  .search__title {
+    margin-bottom: 37px;
   }
 }

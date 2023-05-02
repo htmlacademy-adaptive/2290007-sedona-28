@@ -12,6 +12,13 @@
   background-size: 100% 100%;
 }
 
+@media (min-resolution: 2dppx) {
+  .catalog-intro {
+    background-image: url("../images/catalog-intro-background-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
+}
+
 .catalog-intro::after {
   content: "";
   position: absolute;
