@@ -131,6 +131,11 @@
     color: $black-color;
     background-color: $white-color;
     padding: 0;
+    box-shadow: none;
+  }
+
+  .site-list__link--academy::after {
+    display: none;
   }
 }
 
