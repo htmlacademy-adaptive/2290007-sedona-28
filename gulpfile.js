@@ -14,16 +14,64 @@ export const styles = () => {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
+    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
+
+// HTML
+export const html = () => {
+  return gulp.src('source/*.html')
+  .pipe(htmlmin( options: { collapseWhitespace: true }))
+  .pipe(gulp.dest('build'));
+}
+
+// Scripts
+export const scripts = () => {
+  return gulp.src('source/js/*.js')
+  .pipe(terser())
+  .pipe(gulp.dest('build/js'));
+}
+
+// Images
+export const images = () => {
+  return gulp.src('source/images/**/*.{jpg,png}')
+  .pipe(squoosh())
+  .pipe(gulp.dest('build/images'));
+}
+
+// WebP
+export const createWebp = () => {
+  return gulp.src('source/images/**/*.{jpg,png}')
+  .pipe(squoosh( encodeOptions: {
+    webp: {}
+  }))
+  .pipe(gulp.dest('build/images'));
+}
+
+// SVG
+export const svg = () => {
+  return gulp.src('source/images/*.svg')
+  .pipe(svgo())
+  .pipe(gulp.dest('build/images'));
+}
+
+// export const sprite = () => {
+//   return gulp.src('source/images/icons/*.svg')
+//   .pipe(svgo())
+//   .pipe(svgstore( config: {
+//     InlineSvg: true
+// }))
+//   .pipe(rename( obj: 'sprite.svg'))
+//   .pipe(gulp.dest('build/images'));
+// }
+
 
 // Server
 
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
