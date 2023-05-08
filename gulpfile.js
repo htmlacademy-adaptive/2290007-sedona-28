@@ -9,7 +9,7 @@ import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
-import del from 'del';
+import {deleteAsync} from 'del';
 import browser from 'browser-sync';
 
 // Styles
@@ -22,19 +22,21 @@ export const styles = () => {
       autoprefixer(),
       csso()
     ]))
-    .pipe(rename( obj: 'style.min.css'))
+    .pipe(rename('style.min.css'))
     .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
 
 // HTML
+
 const html = () => {
   return gulp.src('source/*.html')
-  .pipe(htmlmin( options: { collapseWhitespace: true }))
+  .pipe(htmlmin({ collapseWhitespace: true }))
   .pipe(gulp.dest('build'));
 }
 
 // Scripts
+
 const scripts = () => {
   return gulp.src('source/js/*.js')
   .pipe(terser())
@@ -42,6 +44,7 @@ const scripts = () => {
 }
 
 // Images
+
 const images = () => {
   return gulp.src('source/images/**/*.{jpg,png}')
   .pipe(squoosh())
@@ -49,32 +52,35 @@ const images = () => {
 }
 
 // WebP
+
 const createWebp = () => {
   return gulp.src('source/images/**/*.{jpg,png}')
-  .pipe(squoosh( encodeOptions: {
+  .pipe(squoosh({
     webp: {}
   }))
   .pipe(gulp.dest('build/images'));
 }
 
 // SVG
+
 const svg = () => {
   return gulp.src('source/images/*.svg')
   .pipe(svgo())
   .pipe(gulp.dest('build/images'));
 }
 
-// export const sprite = () => {
-//   return gulp.src('source/images/icons/*.svg')
-//   .pipe(svgo())
-//   .pipe(svgstore( config: {
-//     InlineSvg: true
-// }))
-//   .pipe(rename( obj: 'sprite.svg'))
-//   .pipe(gulp.dest('build/images'));
-// }
+const sprite = () => {
+  return gulp.src('source/images/icons/*.svg')
+  .pipe(svgo())
+  .pipe(svgstore() {
+    InlineSvg: true
+})
+  .pipe(rename('sprite.svg'))
+  .pipe(gulp.dest('build/images'));
+}
 
 // Copy
+
 const copy = (done) => {
   gulp.src([
     'source/fonts/*.{woff2,woff}',
@@ -87,8 +93,9 @@ const copy = (done) => {
 }
 
 // Clean
+
 const clean = () => {
-  return del ( patterns: 'build');
+  return deleteAsync ('build');
 }
 
 
@@ -115,6 +122,7 @@ const watcher = () => {
 }
 
 // Build
+
 export const build = gulp.series(
   clean,
   copy,
@@ -129,6 +137,7 @@ export const build = gulp.series(
 );
 
 // Default
+
 export default gulp.series(
   clean,
   copy,
