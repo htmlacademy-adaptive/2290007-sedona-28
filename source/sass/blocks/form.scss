@@ -187,6 +187,19 @@
   cursor: pointer;
 }
 
+.form__button:hover {
+  background-color: #669ec0;
+}
+
+.form__button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+// .form__button:disabled {
+//   background-color: #e5e5e5;
+// }
+
 .form__note {
   @include description-text ();
   font-size: 12px;
