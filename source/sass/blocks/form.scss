@@ -118,6 +118,10 @@
   background-color: $personal-data-color;
   border-radius: 50%;
   cursor: pointer;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
 }
 
 .form__input:focus + .form__mark-radio {
@@ -128,6 +132,10 @@
   background-image: url("../images/radio-mark.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  &:active {
+    background-color: rgba(51, 51, 51, 0.3);
+  }
 }
 
 .form__span {
@@ -151,6 +159,10 @@
   height: 46px;
   background-color: $personal-data-color;
   cursor: pointer;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
 }
 
 .form__input:focus + .form__mark {
@@ -162,6 +174,10 @@
   background-image: url("../images/checkbox-mark.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  &:active {
+    background-color: rgba(51, 51, 51, 0.3);
+  }
 }
 
 .form__fieldset--textarea {
