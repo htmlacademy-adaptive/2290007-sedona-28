@@ -68,16 +68,29 @@
   box-sizing: border-box;
   margin-bottom: 16px;
   padding: 16px 16px;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:not(:placeholder-shown):focus,
+  &:active {
+    background-color: $white-color;
+    outline: 4px solid #e5e5e5;
+  }
 }
 
-.form__input--phone::placeholder,
-.form__input--email::placeholder {
+.form__input::placeholder {
   font-size: 16px;
   color: rgba(0, 0, 0, 0.3);
 }
 
 .form__input--last {
   margin: 0;
+}
+
+.form__fieldset--checkbox br {
+  display: block;
 }
 
 .form__fieldset--radio,
@@ -107,6 +120,10 @@
   cursor: pointer;
 }
 
+.form__input:focus + .form__mark-radio {
+  outline: 2px solid $black-color;
+}
+
 .form__input:checked + .form__mark-radio {
   background-image: url("../images/radio-mark.svg");
   background-repeat: no-repeat;
@@ -134,6 +151,11 @@
   height: 46px;
   background-color: $personal-data-color;
   cursor: pointer;
+}
+
+.form__input:focus + .form__mark {
+  outline: 2px solid $black-color;
+  border-radius: 2px;
 }
 
 .form__input:checked + .form__mark {
@@ -196,9 +218,9 @@
   background-color: #5496bd;
 }
 
-// .form__button:disabled {
-//   background-color: #e5e5e5;
-// }
+.form__button:disabled {
+  background-color: #e5e5e5;
+}
 
 .form__note {
   @include description-text ();

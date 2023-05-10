@@ -17,6 +17,14 @@
   cursor: pointer;
   border: none;
   z-index: 20;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 // mobile
@@ -44,6 +52,14 @@
   cursor: pointer;
   border: none;
   z-index: 30;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav--nojs .main-nav__toogle {
@@ -63,6 +79,7 @@
   @include list-reset;
 }
 
+
 .site-list__link {
   display: block;
   font-weight: 700;
@@ -75,6 +92,15 @@
   background-color: $blue-color;
   padding: 17px 80px 12px;
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    color: rgb(255, 255, 255, 0.3);
+    background-color: #5496bd;
+  }
 }
 
 .site-list__link--index {
@@ -132,6 +158,19 @@
     background-color: $white-color;
     padding: 0;
     box-shadow: none;
+
+    &:hover {
+      color: $blue-color;
+    }
+
+    &:active {
+      color: $black-color;
+      opacity: 0.3;
+    }
+  }
+
+  .site-list__link--current {
+    color: #766357;
   }
 
   .site-list__link--academy::after {

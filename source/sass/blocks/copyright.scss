@@ -9,4 +9,25 @@
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    color: $blue-color;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
+}
+
+.copyright__logo-icon {
+  fill: $black-color;
+
+  &:hover {
+    fill: $blue-color;
+  }
+
+  &:active {
+    fill: #b3b3b3;
+  }
 }
