@@ -18,11 +18,11 @@
   background-color: $white-color;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   margin: 0 auto;
-  margin-top: 402px;
+  margin-top: 102px;
 }
 
 .modal-success__wrapper {
-  padding: 36px 38px 47px;
+  padding: 45px 38px 47px;
 }
 
 .modal-success__title {
@@ -47,13 +47,14 @@
 
 .modal-success__button-wrapper {
   padding: 20px;
+  padding-bottom: 42px;
   background-color: #f2f2f2;
 }
 
 .modal-success__button-close {
   display: block;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
@@ -65,6 +66,19 @@
   margin: 0 auto;
   padding: 18px 15px 14px;
   cursor: pointer;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5496bd;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }
 
 // tablet
@@ -75,13 +89,18 @@
   }
 
   .modal-success__wrapper {
-    padding: 52px 98px 44px;
+    padding: 80px 40px 84px;
   }
 
   .modal-success__title {
-    font-size: 30px;
+    font-size: 40px;
     margin: 0;
-    margin-bottom: 28px;
+    margin-bottom: 45px;
+  }
+
+  .modal-success__description {
+    font-size: 19px;
+    line-height: 28px;
   }
 
   .modal-success__button-wrapper {
@@ -89,9 +108,9 @@
   }
 
   .modal-success__button-close {
-    font-size: 21px;
+    font-size: 24px;
     min-width: 458px;
-    padding: 18px 15px 14px;
+    padding: 25px 15px 25px;
   }
 }
 

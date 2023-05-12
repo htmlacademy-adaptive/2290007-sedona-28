@@ -19,7 +19,7 @@
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   margin: 0 auto;
   margin-top: 116px;
-  padding: 45px 41px 35px;
+  padding: 50px 41px 55px;
 }
 
 .modal-failure__title {
@@ -54,6 +54,19 @@
   margin: 0 auto;
   padding: 18px 15px 14px;
   cursor: pointer;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5496bd;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }
 
 // tablet
@@ -61,22 +74,25 @@
   .modal-failure__container {
     width: 400px;
     margin-top: 283px;
-    padding: 38px 46px 49px;
+    padding: 65px 40px 72px;
   }
 
   .modal-failure__title {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 33px;
+    line-height: 45px;
+    margin-bottom: 25px;
   }
 
   .modal-failure__description {
-    margin-bottom: 28px;
+    font-size: 15px;
+    // // line-height: 45px;
+    margin-bottom: 55px;
   }
 
   .modal-failure__button-close {
     font-size: 21px;
     min-width: 272px;
-    padding: 18px 15px 14px;
+    padding: 20px 15px 20px;
   }
 }
 
