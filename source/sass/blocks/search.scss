@@ -15,7 +15,11 @@
   background-repeat: no-repeat;
 }
 
-.search-offers__wrapper {
+.search br {
+  display: none;
+}
+
+.search__offers-wrapper {
   padding: 42px 29px 32px;
 }
 
@@ -70,7 +74,11 @@
     bottom: 155px;
   }
 
-  .search-offers__wrapper {
+  .search br {
+    display: block;
+  }
+
+  .search__offers-wrapper {
     padding: 60px 166px 44px;
   }
 
@@ -99,7 +107,7 @@
     bottom: 160px;
   }
 
-  .search-offers__wrapper {
+  .search__offers-wrapper {
     padding: 60px 382px 44px;
   }
 

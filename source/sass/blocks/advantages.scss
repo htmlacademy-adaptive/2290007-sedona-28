@@ -1,4 +1,4 @@
-br {
+.advantages br {
   display: none;
 }
 
@@ -7,7 +7,7 @@ br {
   position: relative;
 }
 
-.advantages-causes__wrapper {
+.advantages__causes-wrapper {
   padding: 32px 28px;
 }
 
@@ -142,7 +142,7 @@ br {
 
 // tablet
 @media (min-width: $tablet-width) {
-  br {
+  .advantages br {
     display: block;
   }
 
@@ -150,7 +150,7 @@ br {
     display: none;
   }
 
-  .advantages-causes__wrapper {
+  .advantages__causes-wrapper {
     padding: 47px 124px 55px;
   }
 
@@ -279,11 +279,7 @@ br {
 
 // desktop
 @media (min-width: $desktop-width) {
-  br {
-    display: block;
-  }
-
-  .advantages-causes__wrapper {
+  .advantages__causes-wrapper {
     padding: 59px 358px 44px;
   }
 
