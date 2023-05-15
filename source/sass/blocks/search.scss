@@ -94,9 +94,10 @@
     padding: 14px 15px 17px;
   }
 
-  .search__image {
+  .search iframe {
+    display: block;
+    border: none;
     width: 100%;
-    height: auto;
   }
 }
 

@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" type="image/svg+xml" href="images/favicons/favicon.svg">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon 32x32.png">
-    <link rel="apple-touch-icon" href="images/favicons/favicon 180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon32x32.png">
+    <link rel="apple-touch-icon" href="images/favicons/favicon180x180.png">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
@@ -65,6 +65,9 @@
                   <p class="advantages__description advantages__description--white">Седона не аттракцион для туристов, там течёт своя жизнь</p>
                 </div>
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="images/advantages-town-desktop.webp 1x, images/advantages-town-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/advantages-town-tablet.webp 1x, images/advantages-town-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="images/advantages-town-mobile.webp 1x, images/advantages-town-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="images/advantages-town-desktop.jpg 1x, images/advantages-town-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="images/advantages-town-tablet.jpg 1x, images/advantages-town-tablet@2x.jpg 2x">
                   <img class="advantages__image" src="images/advantages-town-mobile.jpg" srcset="images/advantages-town-mobile@2x.jpg 2x" width="320" height="260" alt="Городок.">
@@ -95,6 +98,9 @@
                   <p class="advantages__description advantages__description--white">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
                 </div>
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="images/advantages-bridge-desktop.webp 1x, images/advantages-bridge-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/advantages-bridge-tablet.webp 1x, images/advantages-bridge-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="images/advantages-bridge-mobile.webp 1x, images/advantages-bridge-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="images/advantages-bridge-desktop.jpg 1x, images/advantages-bridge-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="images/advantages-bridge-tablet.jpg 1x, images/advantages-bridge-tablet@2x.jpg 2x">
                   <img class="advantages__image" src="images/advantages-bridge-mobile.jpg" srcset="images/advantages-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Мост.">
@@ -131,11 +137,7 @@
               <p class="search__description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
             </div>
             <a class="search__link" href="#">Найти гостиницу</a>
-            <picture>
-              <source media="(min-width: 1200px)" srcset="images/search-map-desktop.jpg 1x, images/search-map-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="images/search-map-tablet.jpg 1x, images/search-map-tablet@2x.jpg 2x">
-              <img class="search__image" src="images/search-map-mobile.jpg" srcset="images/search-map-mobile@2x.jpg 2x" width="320" height="350" alt="Карта.">
-            </picture>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62297.76613721481!2d-111.8473816679315!3d34.85313624927934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1684119319759!5m2!1sru!2sru" width="320" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </section>
       </main>
