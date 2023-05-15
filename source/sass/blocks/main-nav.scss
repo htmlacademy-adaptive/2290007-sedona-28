@@ -135,20 +135,20 @@
   }
 
   .site-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    width: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 153px);
+    grid-auto-flow: dense;
+
+    &::before {
+      content: "";
+      grid-column: 3/4;
+      grid-row: span 2;
+    }
   }
 
   .site-list__item {
-    min-width: 153px;
     padding: 18px 0 17px;
     text-align: center;
-  }
-
-  .site-list__item--photo {
-    margin-right: 153px;
   }
 
   .site-list__link {
@@ -181,13 +181,12 @@
 
 // desktop
 @media (min-width: $desktop-width) {
-  .site-list__item {
-    min-width: 240px;
-    padding: 18px 0 17px;
-    text-align: center;
+  .site-list {
+    grid-template-columns: repeat(5, 240px);
   }
 
-  .site-list__item--photo {
-    margin-right: 240px;
+  .site-list__item {
+    padding: 18px 0 17px;
+    text-align: center;
   }
 }

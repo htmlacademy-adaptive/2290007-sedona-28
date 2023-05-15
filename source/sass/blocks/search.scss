@@ -23,8 +23,10 @@
   padding: 42px 29px 32px;
 }
 
-.search__image {
+.search iframe {
   display: block;
+  border: none;
+  width: 100%;
 }
 
 .search__title {
@@ -93,12 +95,6 @@
     margin: 0 155px 55px;
     padding: 14px 15px 17px;
   }
-
-  .search iframe {
-    display: block;
-    border: none;
-    width: 100%;
-  }
 }
 
 // desktop
@@ -118,6 +114,6 @@
   }
 
   .search__title {
-    margin-bottom: 37px;
+    margin-bottom: 35px;
   }
 }
