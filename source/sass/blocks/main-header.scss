@@ -10,14 +10,3 @@
   width: 185px;
   margin: 0 auto;
 }
-
-.main-header--nojs .main-header__logo {
-  z-index: -10;
-}
-
-// tablet
-@media (min-width: $tablet-width) {
-  .main-header--nojs .main-header__logo {
-    z-index: 10;
-  }
-}

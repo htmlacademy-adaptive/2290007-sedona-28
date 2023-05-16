@@ -5,6 +5,10 @@
   background-color: $white-color;
 }
 
+.main-header--nojs .main-nav {
+  padding-top: 95px;
+}
+
 .main-nav--closed .main-nav__toogle {
   position: absolute;
   top: 17px;
@@ -79,7 +83,6 @@
   @include list-reset;
 }
 
-
 .site-list__link {
   display: block;
   font-weight: 700;
@@ -124,6 +127,10 @@
 
 // tablet
 @media (min-width: $tablet-width) {
+  .main-header--nojs .main-nav {
+    padding-top: 0;
+  }
+
   .main-nav--closed .site-list__item,
   .main-nav--opened .site-list__item {
     display: block;
