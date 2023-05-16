@@ -62,16 +62,16 @@
   }
 }
 
-.main-nav--nojs .main-nav__toogle {
+.main-header--nojs .main-nav__toogle {
   display: none;
 }
 
-.main-nav--nojs .main-nav__wrapper {
+.main-header--nojs .main-nav__wrapper {
   position: static;
   min-height: 0;
 }
 
-.main-nav--nojs .site-list__item {
+.main-header--nojs .site-list__item {
   display: block;
 }
 
