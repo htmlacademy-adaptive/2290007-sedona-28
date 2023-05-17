@@ -7,22 +7,22 @@
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" type="image/svg+xml" href="images/favicons/favicon.svg">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon 32x32.png">
-    <link rel="apple-touch-icon" href="images/favicons/favicon 180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon32x32.png">
+    <link rel="apple-touch-icon" href="images/favicons/favicon180x180.png">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <div class="page__container">
-      <header class="main-header">
-        <a class="main-header__logo">
+      <header class="main-header main-header--nojs">
+        <a class="main-header__logo" href="index.html">
           <img class="main-header__logo-image" src="images/logo-sedona.svg" width="185" height="96" alt="Логотип городка Седона.">
         </a>
-        <nav class="main-nav main-nav--closed main-nav--nojs">
-          <button class="main-nav__toogle" type="button">
+        <nav class="main-header__nav nav nav--closed">
+          <button class="nav__toogle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
+          <div class="nav__wrapper">
+            <ul class="nav__list site-list">
               <li class="site-list__item">
                 <a class="site-list__link site-list__link--index" href="index.html">Главная</a>
               </li>
@@ -52,7 +52,7 @@
         </section>
         <section class="review">
           <div class="review__wrapper">
-            <div class="review-form__wrapper">
+            <div class="review__container">
               <h2 class="review__title">Оставьте свой отзыв</h2>
               <p class="review__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
             </div>
@@ -78,12 +78,12 @@
               <fieldset class="form__fieldset form__fieldset--information">
                 <legend class="form__legend form__legend--information">Контактная информация:</legend>
                 <p class="form__field-group form__field-group--phone">
-                  <label class="form__label form__label--phone"><span class="form__span--phone">Контактный телефон*:</span>
+                  <label class="form__label form__label--phone"><span class="form__coverage">Контактный телефон*:</span>
                     <input class="form__input form__input--phone" type="tel" name="tel" placeholder="Введите телефон" required>
                   </label>
                 </p>
                 <p class="form__field-group form__field-group--email">
-                  <label class="form__label form__label--email"><span class="form__span--email">Электронная почта*:</span>
+                  <label class="form__label form__label--email"><span class="form__coverage">Электронная почта*:</span>
                     <input class="form__input form__input--last form__input--email" type="email" name="email" placeholder="Введите e-mail" required>
                   </label>
                 </p>

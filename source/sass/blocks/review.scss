@@ -1,4 +1,4 @@
-.review-form__wrapper {
+.review__container {
   padding: 34px 20px 30px;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -14,7 +14,7 @@
 
 // tablet
 @media (min-width: $tablet-width) {
-  .review-form__wrapper {
+  .review__container {
     padding: 64px 166px 108px;
     border: none;
   }
@@ -27,7 +27,7 @@
 
 // desktop
 @media (min-width: $desktop-width) {
-  .review-form__wrapper {
+  .review__container {
     padding: 115px 382px 68px;
   }
 

@@ -1,4 +1,4 @@
-br {
+.advantages br {
   display: none;
 }
 
@@ -7,7 +7,7 @@ br {
   position: relative;
 }
 
-.advantages-causes__wrapper {
+.advantages__causes-wrapper {
   padding: 32px 28px;
 }
 
@@ -142,7 +142,7 @@ br {
 
 // tablet
 @media (min-width: $tablet-width) {
-  br {
+  .advantages br {
     display: block;
   }
 
@@ -150,7 +150,7 @@ br {
     display: none;
   }
 
-  .advantages-causes__wrapper {
+  .advantages__causes-wrapper {
     padding: 47px 124px 55px;
   }
 
@@ -229,35 +229,14 @@ br {
     background-position: 88px 60px;
   }
 
-  @media (min-resolution: 2dppx) {
-    .advantages__item--housing {
-      background-image: url("../images/icon-housing-tablet@2x.svg");
-      background-size: 768px auto;
-    }
-  }
-
   .advantages__item--food {
     background-image: url("../images/icon-food-tablet.svg");
     background-position: 87px 62px;
   }
 
-  @media (min-resolution: 2dppx) {
-    .advantages__item--food {
-      background-image: url("../images/icon-food-tablet@2x.svg");
-      background-size: 768px auto;
-    }
-  }
-
   .advantages__item--souvenirs {
     background-image: url("../images/icon-souvenirs-tablet.svg");
     background-position: 98px 64px;
-  }
-
-  @media (min-resolution: 2dppx) {
-    .advantages__item--souvenirs {
-      background-image: url("../images/icon-souvenirs-tablet@2x.svg");
-      background-size: 768px auto;
-    }
   }
 
   .advantages__item-wrapper--square {
@@ -279,11 +258,7 @@ br {
 
 // desktop
 @media (min-width: $desktop-width) {
-  br {
-    display: block;
-  }
-
-  .advantages-causes__wrapper {
+  .advantages__causes-wrapper {
     padding: 59px 358px 44px;
   }
 
@@ -313,16 +288,13 @@ br {
     padding: 170px 43px 67px;
   }
 
+  .advantages__title--left {
+    margin-bottom: 25px;
+  }
+
   .advantages__item--housing {
     background-image: url("../images/icon-housing-desktop.svg");
     background-position: 159px 69px;
-  }
-
-  @media (min-resolution: 2dppx) {
-    .advantages__item--housing {
-      background-image: url("../images/icon-housing-desktop@2x.svg");
-      background-size: 1200px auto;
-    }
   }
 
   .advantages__item--food {
@@ -330,23 +302,9 @@ br {
     background-position: 162px 72px;
   }
 
-  @media (min-resolution: 2dppx) {
-    .advantages__item--food {
-      background-image: url("../images/icon-food-desktop@2x.svg");
-      background-size: 1200px auto;
-    }
-  }
-
   .advantages__item--souvenirs {
     background-image: url("../images/icon-souvenirs-desktop.svg");
     background-position: 159px 69px;
-  }
-
-  @media (min-resolution: 2dppx) {
-    .advantages__item--souvenirs {
-      background-image: url("../images/icon-souvenirs-desktop@2x.svg");
-      background-size: 1200px auto;
-    }
   }
 
   .advantages__item-wrapper--square {

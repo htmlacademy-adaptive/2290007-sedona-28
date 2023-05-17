@@ -68,6 +68,7 @@
   box-sizing: border-box;
   margin-bottom: 16px;
   padding: 16px 16px;
+  padding-right: 74px;
 
   &:hover {
     background-color: #e5e5e5;
@@ -186,6 +187,9 @@
 }
 
 .form__textarea {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
   background-color: $personal-data-color;
   border: none;
   width: 279px;
@@ -247,10 +251,6 @@
 
 // tablet
 @media (min-width: $tablet-width) {
-  br {
-    display: block;
-  }
-
   .form {
     position: relative;
     display: grid;
@@ -288,8 +288,7 @@
     margin-left: 0;
   }
 
-  .form__span--phone,
-  .form__span--email {
+  .form__coverage {
     margin-left: 16px;
   }
 
@@ -474,9 +473,13 @@
     width: 430px;
   }
 
-  .form__label--phone,
-  .form__label--email {
+  .form__coverage {
     margin-left: 16px;
+  }
+
+  .form__span--phone,
+  .form__span--email {
+    margin-left: 0;
   }
 
   .form__input--phone,

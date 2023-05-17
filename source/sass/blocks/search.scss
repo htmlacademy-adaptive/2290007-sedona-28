@@ -15,12 +15,18 @@
   background-repeat: no-repeat;
 }
 
-.search-offers__wrapper {
+.search br {
+  display: none;
+}
+
+.search__offers-wrapper {
   padding: 42px 29px 32px;
 }
 
-.search__image {
+.search iframe {
   display: block;
+  border: none;
+  width: 100%;
 }
 
 .search__title {
@@ -70,7 +76,11 @@
     bottom: 155px;
   }
 
-  .search-offers__wrapper {
+  .search br {
+    display: block;
+  }
+
+  .search__offers-wrapper {
     padding: 60px 166px 44px;
   }
 
@@ -85,11 +95,6 @@
     margin: 0 155px 55px;
     padding: 14px 15px 17px;
   }
-
-  .search__image {
-    width: 100%;
-    height: auto;
-  }
 }
 
 // desktop
@@ -99,7 +104,7 @@
     bottom: 160px;
   }
 
-  .search-offers__wrapper {
+  .search__offers-wrapper {
     padding: 60px 382px 44px;
   }
 
@@ -109,6 +114,6 @@
   }
 
   .search__title {
-    margin-bottom: 37px;
+    margin-bottom: 35px;
   }
 }
