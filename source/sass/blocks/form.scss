@@ -59,8 +59,9 @@
 }
 
 .form__input {
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 26px;
   background-color: $personal-data-color;
   border: none;
@@ -82,7 +83,7 @@
 }
 
 .form__input::placeholder {
-  font-size: 16px;
+  font-size: 18px;
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -187,8 +188,9 @@
 }
 
 .form__textarea {
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 26px;
   background-color: $personal-data-color;
   border: none;

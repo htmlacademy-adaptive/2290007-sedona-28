@@ -1,4 +1,5 @@
 .video__wpapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding: 10px 20px 0;
@@ -30,6 +31,25 @@
   display: block;
 }
 
+.video__button {
+  position: absolute;
+  width: 48px;
+  height: 54px;
+  left: 130px;
+  bottom: 60px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 // tablet
 @media (min-width: $tablet-width) {
   .video__wpapper {
@@ -54,6 +74,11 @@
     width: 100%;
     height: auto;
   }
+
+  .video__button {
+    left: 352px;
+    bottom: 265px;
+  }
 }
 
 // desktop
@@ -70,5 +95,10 @@
   .video__image {
     width: 100%;
     height: 500px;
+  }
+
+  .video__button {
+    left: 570px;
+    bottom: 308px;
   }
 }

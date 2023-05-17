@@ -32,6 +32,10 @@
   margin-bottom: 28px;
 }
 
+.modal-failure__title br {
+  display: none;
+}
+
 .modal-failure__description {
   text-align: center;
   text-transform: uppercase;
@@ -42,6 +46,7 @@
 
 .modal-failure__button-close {
   display: block;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -83,6 +88,10 @@
     margin-bottom: 25px;
   }
 
+  .modal-failure__title br {
+    display: block;
+  }
+
   .modal-failure__description {
     margin-bottom: 45px;
   }
@@ -97,25 +106,24 @@
 // desktop
 @media (min-width: $desktop-width) {
   .modal-failure__container {
-    width: 450px;
-    padding: 52px 46px 53px;
+    width: 400px;
+    padding: 52px 46px 55px;
   }
 
   .modal-failure__title {
-    font-size: 33px;
-    line-height: 45px;
+    font-size: 30px;
+    line-height: 40px;
     margin-bottom: 25px;
   }
 
   .modal-failure__description {
-    font-size: 16px;
-    line-height: 26px;
-    margin-bottom: 50px;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 45px;
   }
 
   .modal-failure__button-close {
     font-size: 21px;
-    min-width: 300px;
-    padding: 20px 15px 18px;
+    min-width: 272px;
   }
 }

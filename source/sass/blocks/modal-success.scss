@@ -11,9 +11,9 @@
   z-index: 10;
 }
 
-.modal-success--close {
-  display: none;
-}
+// .modal-success--close {
+//   display: none;
+// }
 
 .modal-success__container {
   width: 320px;
@@ -53,8 +53,9 @@
 
 .modal-success__button-close {
   display: block;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
@@ -102,30 +103,29 @@
   }
 
   .modal-success__button-close {
-    font-size: 18px;
+    font-size: 21px;
     min-width: 458px;
-    padding: 20px 15px 10px;
   }
 }
 
 // desktop
 @media (min-width: $desktop-width) {
   .modal-success__container {
-    width: 710px;
+    width: 640px;
   }
 
   .modal-success__wrapper {
-    padding: 55px 98px 65px;
+    padding: 55px 98px 50px;
   }
 
   .modal-success__title {
-    font-size: 33px;
+    font-size: 30px;
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 
   .modal-success__description {
-    font-size: 15.5px;
+    font-size: 14px;
   }
 
   .modal-success__button-wrapper {
@@ -134,7 +134,6 @@
 
   .modal-success__button-close {
     font-size: 21px;
-    min-width: 510px;
-    padding: 20px 15px;
+    min-width: 458px;
   }
 }
