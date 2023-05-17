@@ -1,15 +1,15 @@
-.main-nav {
+.nav {
   position: relative;
   width: auto;
   min-height: 56px;
   background-color: $white-color;
 }
 
-.main-header--nojs .main-nav {
+.main-header--nojs .nav {
   padding-top: 95px;
 }
 
-.main-nav--closed .main-nav__toogle {
+.nav--closed .nav__toogle {
   position: absolute;
   top: 17px;
   right: 20px;
@@ -33,18 +33,18 @@
 
 // mobile
 @media (min-width: $mobile-width) {
-  .main-nav--closed .site-list__item {
+  .nav--closed .site-list__item {
     display: none;
   }
 }
 
-.main-nav--opened .main-nav__wrapper {
+.nav--opened .nav__wrapper {
   position: absolute;
   width: 100%;
   z-index: 20;
 }
 
-.main-nav--opened .main-nav__toogle {
+.nav--opened .nav__toogle {
   position: absolute;
   top: 17px;
   right: 20px;
@@ -66,11 +66,11 @@
   }
 }
 
-.main-header--nojs .main-nav__toogle {
+.main-header--nojs .nav__toogle {
   display: none;
 }
 
-.main-header--nojs .main-nav__wrapper {
+.main-header--nojs .nav__wrapper {
   position: static;
   min-height: 0;
 }
@@ -79,7 +79,7 @@
   display: block;
 }
 
-.main-nav__list {
+.nav__list {
   @include list-reset;
 }
 
@@ -127,17 +127,17 @@
 
 // tablet
 @media (min-width: $tablet-width) {
-  .main-header--nojs .main-nav {
+  .main-header--nojs .nav {
     padding-top: 0;
   }
 
-  .main-nav--closed .site-list__item,
-  .main-nav--opened .site-list__item {
+  .nav--closed .site-list__item,
+  .nav--opened .site-list__item {
     display: block;
   }
 
-  .main-nav--closed .main-nav__toogle,
-  .main-nav--opened .main-nav__toogle {
+  .nav--closed .nav__toogle,
+  .nav--opened .nav__toogle {
     display: none;
   }
 
