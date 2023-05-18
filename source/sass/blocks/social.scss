@@ -30,6 +30,10 @@
   mask-repeat: no-repeat;
   mask-position: center;
 
+  // &:focus {
+  //   border: 2px solid #000000;
+  // }
+
   &:active {
     opacity: 0.3;
   }
