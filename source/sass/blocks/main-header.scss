@@ -10,3 +10,27 @@
   width: 185px;
   margin: 0 auto;
 }
+
+.main-header--nojs .nav {
+  padding-top: 95px;
+}
+
+.main-header--nojs .nav__toogle {
+  display: none;
+}
+
+.main-header--nojs .nav__wrapper {
+  position: static;
+  min-height: 0;
+}
+
+.main-header--nojs .site-list__item {
+  display: block;
+}
+
+// tablet
+@media (min-width: $tablet-width) {
+  .main-header--nojs .nav {
+    padding-top: 0;
+  }
+}
