@@ -13,6 +13,7 @@
   height: 27px;
   background-image: url("../images/map-marker.svg");
   background-repeat: no-repeat;
+  z-index: 10;
 }
 
 .search br {
@@ -23,11 +24,23 @@
   padding: 42px 29px 32px;
 }
 
+.search__maps {
+  position: relative;
+}
+
 .search iframe {
   display: block;
   border: none;
   width: 100%;
 }
+
+// .search__image {
+//   display: block;
+//   position: absolute;
+//   top: 0;
+//   width: 100%;
+//   z-index: -10;
+// }
 
 .search__title {
   font-weight: 700;
@@ -58,7 +71,6 @@
   margin: 0 18px 49px;
   padding: 16px 49px;
   text-decoration: none;
-  cursor: pointer;
 }
 
 .search__link:hover {

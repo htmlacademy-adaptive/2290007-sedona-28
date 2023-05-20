@@ -20,6 +20,7 @@
 
 .form__legend {
   @include title-text ();
+  width: 100%;
   margin-bottom: 20px;
   padding: 0;
 }
@@ -37,7 +38,13 @@
 
 .form__label--phone,
 .form__label--email {
+  display: block;
   position: relative;
+  margin-left: 0;
+}
+
+.form__coverage {
+  margin-left: 16px;
 }
 
 .form__label--phone::after,
@@ -290,10 +297,6 @@
     margin-left: 0;
   }
 
-  .form__coverage {
-    margin-left: 16px;
-  }
-
   .form__input {
     width: 295px;
   }
@@ -432,7 +435,7 @@
   .form__button {
     min-width: 324px;
     margin: 0;
-    padding: 16px 71px;
+    padding: 16px 25px;
   }
 
   .form__note {
@@ -457,6 +460,7 @@
 
   .form__legend--information {
     text-align: center;
+    padding: 0;
   }
 
   .form__legend {
@@ -473,10 +477,6 @@
 
   .form__input {
     width: 430px;
-  }
-
-  .form__coverage {
-    margin-left: 16px;
   }
 
   .form__span--phone,
@@ -574,7 +574,5 @@
 
   .form__button {
     width: 384px;
-    margin: 0;
-    padding: 16px 71px;
   }
 }
