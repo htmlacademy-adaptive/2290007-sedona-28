@@ -174,6 +174,7 @@
     width: 256px;
     box-sizing: border-box;
     padding: 52px 23px 31px;
+    flex-shrink: 0;
   }
 
   .advantages__item-wrapper--bridge {
@@ -259,7 +260,7 @@
 // desktop
 @media (min-width: $desktop-width) {
   .advantages__causes-wrapper {
-    padding: 59px 358px 44px;
+    padding: 59px 356px 44px;
   }
 
   .advantages__list {

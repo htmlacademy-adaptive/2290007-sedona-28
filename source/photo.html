@@ -14,7 +14,13 @@
   <body class="page__body">
     <svg style="display: none">
       <symbol viewBox="0 0 23 21" id="like-login">
-        <path opacity="" d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" fill="#"/>
+        <path opacity="" d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" fill=""/>
+      </symbol>
+      <symbol viewBox="0 0 48 54" id="polygon-login">
+        <path d="M48 27L0 54L2.42273e-06 0L48 27Z" fill="white" fill-opacity="0.7"/>
+      </symbol>
+      <symbol viewBox="0 0 27 35" id="copyright-login">
+        <path d="M13.65.45h-.1L.05 1.85v24.7l13.5 8 13.4-8V1.85L13.65.45Zm11.4 12.1-11.5-6.8v-.1h-.1l-.1-.1v.1l-11.4 6.9v-9l11.5-1.2 11.6 1.2v9Zm-11.6-5.3 11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1-11.4-6.7 11.4-6.8Zm-11.5 8.3 11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9-11.5-6.8v-9.9Z" fill=""/>
       </symbol>
     </svg>
     <div class="page__container">
@@ -23,21 +29,21 @@
           <img class="main-header__logo-image" src="images/logo-sedona.svg" width="185" height="96" alt="Логотип городка Седона.">
         </a>
         <nav class="main-header__nav nav nav--closed">
-          <button class="nav__toogle" type="button">
+          <button class="main-header__toogle nav__toogle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <div class="nav__wrapper">
+          <div class="main-header__wrapper nav__wrapper">
             <ul class="nav__list site-list">
-              <li class="site-list__item">
+              <li class="main-header__item site-list__item">
                 <a class="site-list__link site-list__link--index" href="index.html">Главная</a>
               </li>
-              <li class="site-list__item site-list__item--current site-list__item--photo">
+              <li class="main-header__item site-list__item site-list__item--current site-list__item--photo">
                 <a class="site-list__link site-list__link--current" href="photo.html">ФОТО И ВИДЕО</a>
               </li>
-              <li class="site-list__item">
+              <li class="main-header__item site-list__item">
                 <a class="site-list__link" href="form.html">Форма отзыва</a>
               </li>
-              <li class="site-list__item">
+              <li class="main-header__item site-list__item">
                 <a class="site-list__link site-list__link--academy" href="#">HTML ACADEMY</a>
               </li>
             </ul>
@@ -57,30 +63,34 @@
         </section>
         <section class="photo">
           <div class="photo__wrapper">
-            <div class="photo-catalog__wrapper">
+            <div class="photo__catalog">
               <h2 class="photo__title">Фото и видео</h2>
               <p class="photo__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
             </div>
             <ul class="photo__list">
               <li class="photo__item photo__item--open-spaces">
                 <div class="photo__item-wrapper">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1200px)" srcset="images/photo-1-desktop.webp 1x, images/photo-1-desktop@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="images/photo-1-tablet.webp 1x, images/photo-1-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="images/photo-1-mobile.webp 1x, images/photo-1-mobile@2x.webp 2x">
-                    <source media="(min-width: 1200px)" srcset="images/photo-1-desktop.jpg 1x, images/photo-1-desktop@2x.jpg 2x">
-                    <source media="(min-width: 768px)" srcset="images/photo-1-tablet.jpg 1x, images/photo-1-tablet@2x.jpg 2x">
-                    <img class="photo__image photo__image--open-spaces" src="cphoto-1-mobile.jpg" srcset="images/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы.">
-                  </picture>
+                  <a class="photo__link" href="#">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1200px)" srcset="images/photo-1-desktop.webp 1x, images/photo-1-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="images/photo-1-tablet.webp 1x, images/photo-1-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="images/photo-1-mobile.webp 1x, images/photo-1-mobile@2x.webp 2x">
+                      <source media="(min-width: 1200px)" srcset="images/photo-1-desktop.jpg 1x, images/photo-1-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="images/photo-1-tablet.jpg 1x, images/photo-1-tablet@2x.jpg 2x">
+                      <img class="photo__image photo__image--open-spaces" src="photo-1-mobile.jpg" srcset="images/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы.">
+                    </picture>
+                  </a>
                   <div class="photo__text-number-wrapper">
                     <div class="photo__text-wrapper">
                       <h3 class="photo__subtitle">Неродные просторы</h3>
                       <span class="photo__text">Автор фото: Борис</span>
                     </div>
                     <div class="photo__number-wrapper">
-                      <svg class="photo__icon" width="23" height="21">
-                        <use xlink:href="#like-login"></use>
-                      </svg>
+                      <button class="photo__button">
+                        <svg class="photo__icon" width="23" height="21">
+                          <use xlink:href="#like-login"></use>
+                        </svg>
+                      </button>
                       <span class="photo__number photo__number--like">1350</span>
                     </div>
                   </div>
@@ -88,23 +98,27 @@
               </li>
               <li class="photo__item">
                 <div class="photo__item-wrapper">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1200px)" srcset="images/photo-2-desktop.webp 1x, images/photo-2-desktop@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="images/photo-2-tablet.webp 1x, images/photo-2-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="images/photo-2-mobile.webp 1x, images/photo-2-mobile@2x.webp 2x">
-                    <source media="(min-width: 1200px)" srcset="images/photo-2-desktop.jpg 1x, images/photo-2-desktop@2x.jpg 2x">
-                    <source media="(min-width: 768px)" srcset="images/photo-2-tablet.jpg 1x, images/photo-2-tablet@2x.jpg 2x">
-                    <img class="photo__image" src="images/photo-2-mobile.jpg" srcset="images/photo-2-mobile@2x.jpg 2x" width="280" height="280" alt="Местная растительность.">
-                  </picture>
+                  <a class="photo__link" href="#">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1200px)" srcset="images/photo-2-desktop.webp 1x, images/photo-2-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="images/photo-2-tablet.webp 1x, images/photo-2-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="images/photo-2-mobile.webp 1x, images/photo-2-mobile@2x.webp 2x">
+                      <source media="(min-width: 1200px)" srcset="images/photo-2-desktop.jpg 1x, images/photo-2-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="images/photo-2-tablet.jpg 1x, images/photo-2-tablet@2x.jpg 2x">
+                      <img class="photo__image" src="images/photo-2-mobile.jpg" srcset="images/photo-2-mobile@2x.jpg 2x" width="280" height="280" alt="Местная растительность.">
+                    </picture>
+                  </a>
                   <div class="photo__text-number-wrapper">
                     <div class="photo__text-wrapper">
                       <h3 class="photo__subtitle">Местная растительность</h3>
                       <span class="photo__text">Автор фото: Сергей</span>
                     </div>
                     <div class="photo__number-wrapper">
-                      <svg class="photo__icon" width="23" height="21">
-                        <use xlink:href="#like-login"></use>
-                      </svg>
+                      <button class="photo__button">
+                        <svg class="photo__icon" width="23" height="21">
+                          <use xlink:href="#like-login"></use>
+                        </svg>
+                      </button>
                       <span class="photo__number photo__number--like">143</span>
                     </div>
                   </div>
@@ -112,23 +126,27 @@
               </li>
               <li class="photo__item">
                 <div class="photo__item-wrapper">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1200px)" srcset="images/photo-3-desktop.webp 1x, images/photo-3-desktop@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="images/photo-3-tablet.webp 1x, images/photo-3-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="images/photo-3-mobile.webp 1x, images/photo-3-mobile@2x.webp 2x">
-                    <source media="(min-width: 1200px)" srcset="images/photo-3-desktop.jpg 1x, images/photo-3-desktop@2x.jpg 2x">
-                    <source media="(min-width: 768px)" srcset="images/photo-3-tablet.jpg 1x, images/photo-3-tablet@2x.jpg 2x">
-                    <img class="photo__image" src="images/photo-3-mobile.jpg" srcset="images/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога на север.">
-                  </picture>
+                  <a class="photo__link" href="#">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1200px)" srcset="images/photo-3-desktop.webp 1x, images/photo-3-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="images/photo-3-tablet.webp 1x, images/photo-3-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="images/photo-3-mobile.webp 1x, images/photo-3-mobile@2x.webp 2x">
+                      <source media="(min-width: 1200px)" srcset="images/photo-3-desktop.jpg 1x, images/photo-3-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="images/photo-3-tablet.jpg 1x, images/photo-3-tablet@2x.jpg 2x">
+                      <img class="photo__image" src="images/photo-3-mobile.jpg" srcset="images/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога на север.">
+                    </picture>
+                  </a>
                   <div class="photo__text-number-wrapper photo__text-number-wrapper--dark">
                     <div class="photo__text-wrapper">
                       <h3 class="photo__subtitle">Дорога на север</h3>
                       <span class="photo__text">Автор фото: Петр</span>
                     </div>
                     <div class="photo__number-wrapper">
-                      <svg class="photo__icon" width="23" height="21">
-                        <use xlink:href="#like-login"></use>
-                      </svg>
+                      <button class="photo__button photo__button--dark">
+                        <svg class="photo__icon" width="23" height="21">
+                          <use xlink:href="#like-login"></use>
+                        </svg>
+                      </button>
                       <span class="photo__number photo__number--like">96</span>
                     </div>
                   </div>
@@ -136,23 +154,27 @@
               </li>
               <li class="photo__item">
                 <div class="photo__item-wrapper">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1200px)" srcset="images/photo-4-desktop.webp 1x, images/photo-4-desktop@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="images/photo-4-tablet.webp 1x, images/photo-4-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="images/photo-4-mobile.webp 1x, images/photo-4-mobile@2x.webp 2x">
-                    <source media="(min-width: 1200px)" srcset="images/photo-4-desktop.jpg 1x, images/photo-4-desktop@2x.jpg 2x">
-                    <source media="(min-width: 768px)" srcset="images/photo-4-tablet.jpg 1x, images/photo-4-tablet@2x.jpg 2x">
-                    <img class="photo__image" src="images/photo-4-mobile.jpg" srcset="images/photo-4-mobile@2x.jpg 2x" width="280" height="280" alt="Мост дьявола.">
-                  </picture>
+                  <a class="photo__link" href="#">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1200px)" srcset="images/photo-4-desktop.webp 1x, images/photo-4-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="images/photo-4-tablet.webp 1x, images/photo-4-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="images/photo-4-mobile.webp 1x, images/photo-4-mobile@2x.webp 2x">
+                      <source media="(min-width: 1200px)" srcset="images/photo-4-desktop.jpg 1x, images/photo-4-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="images/photo-4-tablet.jpg 1x, images/photo-4-tablet@2x.jpg 2x">
+                      <img class="photo__image" src="images/photo-4-mobile.jpg" srcset="images/photo-4-mobile@2x.jpg 2x" width="280" height="280" alt="Мост дьявола.">
+                    </picture>
+                  </a>
                   <div class="photo__text-number-wrapper">
                     <div class="photo__text-wrapper">
                       <h3 class="photo__subtitle">Мост дьявола</h3>
                       <span class="photo__text">Автор фото: Антон</span>
                     </div>
                     <div class="photo__number-wrapper">
-                      <svg class="photo__icon" width="23" height="21">
-                        <use xlink:href="#like-login"></use>
-                      </svg>
+                      <button class="photo__button">
+                        <svg class="photo__icon" width="23" height="21">
+                          <use xlink:href="#like-login"></use>
+                        </svg>
+                      </button>
                       <span class="photo__number photo__number--like">254</span>
                     </div>
                   </div>
@@ -175,6 +197,11 @@
               <source media="(min-width: 768px)" srcset="images/video-tablet.jpg 1x, images/video-tablet@2x.jpg 2x">
               <img class="video__image" src="images/video-mobile.jpg" srcset="images/video-mobile@2x.jpg 2x" width="280" height="177" alt="Видео-обзор городка Седона.">
             </picture>
+            <button class="video__button">
+              <svg width="48" height="54">
+                <use xlink:href="#polygon-login"></use>
+              </svg>
+            </button>
           </div>
         </section>
       </main>
@@ -204,8 +231,10 @@
           </div>
           <div class="main-footer__copyright copyright">
             <b class="copyright__text">Разработано</b>
-            <a class="copyright__logo" href="https://htmlacademy.ru/">
-              <svg class="copyright__logo-icon" width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.65.45h-.1L.05 1.85v24.7l13.5 8 13.4-8V1.85L13.65.45Zm11.4 12.1-11.5-6.8v-.1h-.1l-.1-.1v.1l-11.4 6.9v-9l11.5-1.2 11.6 1.2v9Zm-11.6-5.3 11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1-11.4-6.7 11.4-6.8Zm-11.5 8.3 11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9-11.5-6.8v-9.9Z" fill=""/></svg>
+            <a class="copyright__logo" href="https://up.htmlacademy.ru/profession/frontender/16/adaptive/28">
+              <svg class="copyright__logo-icon" width="27" height="35">
+                <use xlink:href="#copyright-login"></use>
+              </svg>
             </a>
           </div>
         </div>

@@ -9,4 +9,40 @@
   z-index: 10;
   width: 185px;
   margin: 0 auto;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    opacity: 0.6;
+  }
+
+  &:active {
+    transform: scale(1.2);
+    transition: 0.25s;
+    opacity: 0.3;
+  }
+}
+
+.main-header--nojs .main-header__nav {
+  padding-top: 95px;
+}
+
+.main-header--nojs .main-header__nav .main-header__toogle {
+  display: none;
+}
+
+.main-header--nojs .main-header__nav .main-header__wrapper {
+  position: static;
+  min-height: 0;
+}
+
+.main-header--nojs .main-header__nav .main-header__item {
+  display: block;
+}
+
+// tablet
+@media (min-width: $tablet-width) {
+  .main-header--nojs .main-header__nav {
+    padding-top: 0;
+  }
 }

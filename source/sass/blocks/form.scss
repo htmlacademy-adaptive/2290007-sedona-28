@@ -20,6 +20,7 @@
 
 .form__legend {
   @include title-text ();
+  width: 100%;
   margin-bottom: 20px;
   padding: 0;
 }
@@ -37,7 +38,13 @@
 
 .form__label--phone,
 .form__label--email {
+  display: block;
   position: relative;
+  margin-left: 0;
+}
+
+.form__coverage {
+  margin-left: 16px;
 }
 
 .form__label--phone::after,
@@ -59,8 +66,9 @@
 }
 
 .form__input {
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 26px;
   background-color: $personal-data-color;
   border: none;
@@ -82,7 +90,7 @@
 }
 
 .form__input::placeholder {
-  font-size: 16px;
+  font-size: 18px;
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -187,8 +195,9 @@
 }
 
 .form__textarea {
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 26px;
   background-color: $personal-data-color;
   border: none;
@@ -286,10 +295,6 @@
   .form__label--phone,
   .form__label--email {
     margin-left: 0;
-  }
-
-  .form__coverage {
-    margin-left: 16px;
   }
 
   .form__input {
@@ -430,7 +435,7 @@
   .form__button {
     min-width: 324px;
     margin: 0;
-    padding: 16px 71px;
+    padding: 16px 25px;
   }
 
   .form__note {
@@ -455,6 +460,7 @@
 
   .form__legend--information {
     text-align: center;
+    padding: 0;
   }
 
   .form__legend {
@@ -471,10 +477,6 @@
 
   .form__input {
     width: 430px;
-  }
-
-  .form__coverage {
-    margin-left: 16px;
   }
 
   .form__span--phone,
@@ -572,7 +574,5 @@
 
   .form__button {
     width: 384px;
-    margin: 0;
-    padding: 16px 71px;
   }
 }
