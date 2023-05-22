@@ -26,21 +26,24 @@
 
 .search__maps {
   position: relative;
+  min-height: 350px;
 }
 
 .search iframe {
-  display: block;
+  position: relative;
+  display: none;
   border: none;
   width: 100%;
+  z-index: 10;
 }
 
-// .search__image {
-//   display: block;
-//   position: absolute;
-//   top: 0;
-//   width: 100%;
-//   z-index: -10;
-// }
+.search__image {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
 
 .search__title {
   font-weight: 700;
