@@ -29,7 +29,7 @@
 
 // mobile
 @media (min-width: $mobile-width) {
-  .nav--closed .site-list__item {
+  .nav--closed .nav__item {
     display: none;
   }
 }
@@ -110,8 +110,8 @@
 
 // tablet
 @media (min-width: $tablet-width) {
-  .nav--closed .site-list__item,
-  .nav--opened .site-list__item {
+  .nav--closed .nav__item,
+  .nav--opened .nav__item {
     display: block;
   }
 
