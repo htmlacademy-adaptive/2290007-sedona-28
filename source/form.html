@@ -67,17 +67,17 @@
               <fieldset class="form__fieldset">
                 <legend class="form__legend">Представьтесь:</legend>
                 <p class="form__field-group">
-                  <label class="form__label">Имя*:
+                  <label class="form__label"><span class="form__coverage">Имя*:</span>
                     <input class="form__input" type="text" name="name" placeholder="Имя" required>
                   </label>
                 </p>
                 <p class="form__field-group">
-                  <label class="form__label">Фамилия*:
+                  <label class="form__label"><span class="form__coverage">Фамилия*:</span>
                     <input class="form__input" type="text" name="surname" placeholder="Фамилия" required>
                   </label>
                 </p>
                 <p class="form__field-group">
-                  <label class="form__label">Отчество:
+                  <label class="form__label"><span class="form__coverage">Отчество:</span>
                     <input class="form__input form__input--last" type="text"  placeholder="Отчество" name="surname">
                   </label>
                 </p>
@@ -100,23 +100,23 @@
                 <ul class="form__list form__list--radio">
                   <li class="form-item">
                     <label class="form__label form__label--radio">
-                      <input class="visually-hidden form__input" type="radio" name="impression" value="rather-positive" checked>
+                      <input class="visually-hidden form__radio" type="radio" name="impression" value="rather-positive" checked>
                       <span class="form__mark-radio"></span>
-                      <span class="form__span">Скорее положительное</span>
+                      <span class="form__span form__span--radio">Скорее положительное</span>
+                    </label>
+                  </li>
+                  <li class="form-item">
+                    <label class="form__label form__label--radio form__label--secondary">
+                      <input class="visually-hidden form__radio" type="radio" name="impression" value="rather-negative">
+                      <span class="form__mark-radio"></span>
+                      <span class="form__span form__span--radio form__span--secondary">Скорее отрицательное</span>
                     </label>
                   </li>
                   <li class="form-item">
                     <label class="form__label form__label--radio">
-                      <input class="visually-hidden form__input" type="radio" name="impression" value="rather-negative">
+                      <input class="visually-hidden form__radio" type="radio" name="impression" value="difficult-to-answer">
                       <span class="form__mark-radio"></span>
-                      <span class="form__span form__span--secondary">Скорее отрицательное</span>
-                    </label>
-                  </li>
-                  <li class="form-item">
-                    <label class="form__label form__label--radio">
-                      <input class="visually-hidden form__input" type="radio" name="impression" value="difficult-to-answer">
-                      <span class="form__mark-radio"></span>
-                      <span class="form__span form__span--last">Затрудняюсь ответить</span>
+                      <span class="form__span form__span--radio">Затрудняюсь ответить</span>
                     </label>
                   </li>
                 </ul>
@@ -126,30 +126,30 @@
                 <ul class="form__list form__list--checkbox">
                   <li class="form-item">
                     <label class="form__label form__label--checkbox">
-                      <input class="visually-hidden form__input" type="checkbox" name="devil's-bridge" checked>
+                      <input class="visually-hidden form__checkbox" type="checkbox" name="devil's-bridge" checked>
                       <span class="form__mark"></span>
                       <span class="form__span form__span--checkbox">Мост Дьявола</span>
                     </label>
                   </li>
                   <li class="form-item">
                     <label class="form__label form__label--checkbox">
-                      <input class="visually-hidden form__input" type="checkbox" name="munt-bell" checked>
+                      <input class="visually-hidden form__checkbox" type="checkbox" name="munt-bell" checked>
                       <span class="form__mark"></span>
                       <span class="form__span form__span--checkbox">Гора-Колокол</span>
                     </label>
                   </li>
                   <li class="form-item">
                     <label class="form__label form__label--checkbox">
-                      <input class="visually-hidden form__input" type="checkbox" name="slide-park" checked>
+                      <input class="visually-hidden form__checkbox" type="checkbox" name="slide-park" checked>
                       <span class="form__mark"></span>
                       <span class="form__span form__span--checkbox">Слайд-парк</span>
                     </label>
                   </li>
                   <li class="form-item">
                     <label class="form__label form__label--checkbox">
-                      <input class="visually-hidden form__input" type="checkbox" name="red-rocks">
+                      <input class="visually-hidden form__checkbox" type="checkbox" name="red-rocks">
                       <span class="form__mark"></span>
-                      <span class="form__span form__span--checkbox form__span--last">Красные скалы</span>
+                      <span class="form__span form__span--checkbox">Красные скалы</span>
                     </label>
                   </li>
                 </ul>
