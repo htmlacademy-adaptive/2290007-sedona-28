@@ -33,7 +33,6 @@
   text-transform: uppercase;
   color: $grey-color;
   margin: 0;
-  margin-left: 16px;
 }
 
 .form__label--phone,
@@ -104,7 +103,7 @@
 
 .form__fieldset--radio,
 .form__fieldset--checkbox {
-  padding-bottom: 24px;
+  padding-bottom: 8px;
 }
 
 .form__list {
@@ -117,27 +116,29 @@
 .form__label--radio,
 .form__label--checkbox {
   position: relative;
-  margin: 0;
+  display: block;
+  margin-bottom: 16px;
 }
 
 .form__mark-radio {
-  position: absolute;
+  display: inline-block;
   width: 46px;
   height: 46px;
   background-color: $personal-data-color;
   border-radius: 50%;
   cursor: pointer;
+  vertical-align: middle;
 
   &:hover {
     background-color: #e5e5e5;
   }
 }
 
-.form__input:focus + .form__mark-radio {
+.form__radio:focus + .form__mark-radio {
   outline: 2px solid $black-color;
 }
 
-.form__input:checked + .form__mark-radio {
+.form__radio:checked + .form__mark-radio {
   background-image: url("../images/radio-mark.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -149,37 +150,34 @@
 
 .form__span {
   display: inline-block;
+  vertical-align: middle;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-transform: none;
   color: #000000;
-  margin-bottom: 16px;
-  padding: 10px 0 10px 62px;
-}
-
-.form__span--last {
-  margin: 0;
+  padding: 10px 0 10px 10px;
 }
 
 .form__mark {
-  position: absolute;
+  display: inline-block;
   width: 46px;
   height: 46px;
   background-color: $personal-data-color;
   cursor: pointer;
+  vertical-align: middle;
 
   &:hover {
     background-color: #e5e5e5;
   }
 }
 
-.form__input:focus + .form__mark {
+.form__checkbox:focus + .form__mark {
   outline: 2px solid $black-color;
   border-radius: 2px;
 }
 
-.form__input:checked + .form__mark {
+.form__checkbox:checked + .form__mark {
   background-image: url("../images/checkbox-mark.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -187,6 +185,11 @@
   &:active {
     background-color: rgba(51, 51, 51, 0.3);
   }
+}
+
+.form__span--radio,
+.form__span--checkbox {
+  display: inline;
 }
 
 .form__fieldset--textarea {
@@ -308,7 +311,7 @@
   }
 
   .form__fieldset--radio {
-    margin-bottom: 48px;
+    margin-bottom: 35px;
   }
 
   .form__fieldset--radio::before {
@@ -334,16 +337,19 @@
   }
 
   .form__list--radio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 16px;
     padding: 0 36px;
+  }
+
+  .form__label--radio {
+    margin-bottom: 15px;
   }
 
   .form__span {
     margin-right: 16px;
-    padding: 10px 33px 10px 62px;
-  }
-
-  .form__span--secondary {
-    margin-right: 0;
+    padding: 0 0 0 10px;
   }
 
   .form__fieldset--checkbox {
@@ -377,11 +383,6 @@
     grid-template-columns: repeat(2, 1fr);
     column-gap: 32px;
     padding: 0 84px;
-  }
-
-  .form__span--checkbox {
-    margin-right: 0;
-    margin-bottom: 16px;
   }
 
   .form__fieldset--radio,
@@ -513,17 +514,17 @@
     padding-left: 53px;
   }
 
+  .form__label--secondary {
+    margin-left: 0;
+  }
+
   .form__span {
     margin-right: 0;
   }
 
-  .form__span--last {
-    margin-bottom: 16px;
-  }
-
   .form__list--checkbox {
     display: grid;
-    grid-template-columns: 172px 170px 153px 184px;
+    grid-template-columns: 173px 170px 153px 184px;
     column-gap: 64px;
     padding: 0 44px;
   }
